@@ -4,10 +4,10 @@
 
 
 @section('content')
-<br><br>
+<br>
 <div class="nav f5">
 <div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
-<img src="img/sa.png" class="img-responsive" width="300" height="270">
+<img src="img/i-banner.png" class="img-responsive" width="500" height="400">
 <div class="animatedParent" data-sequence="500">
 <h2 class="animated bounceIn txt-shadow" data-id="1">You are few seconds away from unlocking your device!</h2>
 <h4>Create account to start unlocking devices </h4>
@@ -28,7 +28,7 @@
 <br>
 </div>
 
-<div class="col-sm-5 col-md-5 bg-n"> 
+<div class="col-sm-offset-1 col-md-4 bg-n"> 
 <div class="visible-xs">
 <h3 class="form-signin-heading text-primary">Register account</h3>
 </div>
@@ -84,7 +84,17 @@
 </div>
 </div>
 
-
+ <br>
+    <div class="nav">
+    <footer class="bgn text-center">
+      <div class="inline">
+        <p class="blck2">Copyright &copy; 2015 Perfectunlockgh.com all rights reserved. <a href="">Terms and conditions</a>
+        <ul class="nav">
+        </ul>
+        </p>
+      </div>
+      </div>
+    </footer>  
 
 
 @stop
