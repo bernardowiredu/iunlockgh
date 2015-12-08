@@ -63,9 +63,20 @@
        
         <br>
     </div>
+    </div> 
 
-   
-</div> 
+
+ <br>
+    <div class="nav">
+    <footer class="bgn text-center">
+      <div class="inline">
+        <p class="blck2">Copyright &copy; 2015 Perfectunlockgh.com all rights reserved. <a href="">Terms and conditions</a>
+        <ul class="nav">
+        </ul>
+        </p>
+      </div>
+      </div>
+    </footer>  
 
 
 
