@@ -97,7 +97,7 @@ class PaymentController extends BaseController {
 
 			$url = "http://sms.nasaramobile.com/api?api_key=5526d8e9e0ebe5526d8e9e0f32&&sender_id=PerfectLTD&&phone=$phone&&message=".urlencode($message)."";
 
-			/*$response = file_get_contents($url);*/
+			$response = file_get_contents($url);
 
 			$payment = new Payment;
 

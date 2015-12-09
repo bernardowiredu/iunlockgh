@@ -2,7 +2,7 @@
 
 
 @section('header')
-<h1 class="text-center uptest">search results for "{{$keyword}}"</h1>
+<h1 class="text-center uptest blck">search results for "{{$keyword}}"</h1>
 
 @stop
 

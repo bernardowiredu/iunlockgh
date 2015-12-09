@@ -14,7 +14,7 @@
 		[hidden] { display: none; }
 		html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 		html, button, input, select, textarea { font-family: 'Roboto Condensed', sans-serif; color: #222; }
-		body { margin: 0; font-size: 1em; line-height: 1.4; background-image: url(../img/bg.jpg);}
+		body { margin: 0; font-size: 1em; line-height: 1.4; background-image: url(../public/img/bg.jpg);}
 		::-moz-selection { background: #E37B52; color: #fff; text-shadow: none; }
 		::selection { background: #E37B52; color: #fff; text-shadow: none; }
 		a { color: #00e; }

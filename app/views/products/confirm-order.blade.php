@@ -30,7 +30,7 @@
 </div>
 <div class="col-xs-10 col-md-9">
 
-<h4 class="yellow cover cnta ny"><img src="../public/img/folder_modified.png"><b>CONFIRM YOUR ORDER DETAILS</b></h4>
+<h4 class="blck cover cnta f5"><img src="../public/img/folder_modified.png"><b>CONFIRM YOUR ORDER DETAILS</b></h4>
 
 <div class="panel panel-inverse">
   <!-- <div class="panel-heading">
@@ -40,29 +40,74 @@
   @include('common.notification')
 
   <div class="panel-body  f5 text-center blck">
+
+  <table class="table table-bordered mf">
+  @foreach($orders as $order)
+      <tbody>
+        <tr>
+          <td>
+           Network Locked
+          </td>
+          <td>
+           <b>{{$order->network_name}}</b>
+            </td>
+        </tr>
+        <tr>
+          <td>
+           Unlocking Price
+          </td>
+          <td>
+            <b>GH₵ {{$order->price}}</b>
+            </td>
+        </tr>
+        <tr>
+          <td>
+           Phone IMEI
+          </td>
+          <td>
+            <b>{{$order->imei}}</b>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            Delivery Time
+          </td>
+          <td>
+             <b>{{$order->delivery}}</b>
+            </td>
+        </tr>
+         <tr>
+          <td>
+            Order Contact
+          </td>
+
+          <td>
+          <span class="blue"><i class="glyphicon glyphicon-phone"></i><b> {{$order->order_contact}}</b></span>
+            </td>
+        </tr>
+        <tr>
+        <div class="inline">
+        <td>
+       </td>
+		
+		<td>
+			 <a href="{{URL::to('delete/' .$order->id)}}"><button class="btn btn-danger"> &laquo; CANCEL </button></a>
+		
+			<a href="{{URL::to('make-payment/' .$order->id)}}"><button class="btn btn-success ny"> CONFIRM AND PAY &raquo;</button>
+		</a>
+		<br><br>
+		</div>
+		</td>
+		</tr>
+    </tbody>
+    @endforeach
+    </table>
    
 
-@foreach($orders as $order)
+
 <h4>
-<p>Network Locked To: <b>{{$order->network_name}}</b></p><br>
-<p>Price: <b>GH₵ {{$order->price}}</b></p><br>
-<p>Unlocking Time: <b class="blue">{{$order->delivery}}</b></p><br>
-<p>Phone Model: <span class="red"><b>{{$order->product_name}}</b></span></p><br>
-<!-- <p>Network Locked: {{$order->network_name}}</p> -->
-<p>IMEI Number: <b>{{$order->imei}}</b></p><br>
-<!-- p>Price:<span class="yellow"><b> GH₵ {{$order->price}}</b></span> </p> -->
-<p>Delivery Method: <span class="blue"><i class="glyphicon glyphicon-phone"></i><b> {{$order->order_contact}}</b></span></p><br>
 
-</h4>
 
-<p></p>
-<div class="inline">
-<a href="{{URL::to('delete/' .$order->id)}}"><button class="btn btn-danger"> &laquo; CANCEL ORDER </button></a>
-<a href="{{URL::to('make-payment/' .$order->id)}}"><button class="btn btn-success ny"> CONFIRM AND PAY &raquo;</button>
-</a>
-<br><br>
-</div>
-@endforeach
 
   </div>
 </div>

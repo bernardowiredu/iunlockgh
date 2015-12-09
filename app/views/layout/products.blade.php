@@ -49,7 +49,7 @@
     <div class="container">
 
       <!-- Static navbar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top mb">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -116,10 +116,10 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-      <br><p></p>
-       <div class='p'> 
+       <br>
+      <div class="p"> 
           @foreach($upnav as $up)
-          <span><b>{{$up->date}}</b> {{$up->message}}  &emsp;</span>
+          <span><b class="red">{{$up->date}}</b> {{$up->message}}  &emsp;</span>
           @endforeach
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -135,7 +135,7 @@
           pauseOnHover: true
         });
         </script>
-      <br><p></p>
+       <br><p></p>
        <div id="call1" class="well well-sm">
        <div class="row">
        <ul class="nav">
@@ -203,7 +203,7 @@
 
    </div> 
    <br> 
-   <div class="col-sm-6 col-md-3 cover ny">
+   <div class="col-sm-6 col-md-3 cover f5">
    <h4 class="blue">Start unlocking here</h4>
    <select class="form-control" name="manufacturer">
    <option>Acatel</option>

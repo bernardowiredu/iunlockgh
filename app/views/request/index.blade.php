@@ -5,7 +5,7 @@
 @section('header')
 
 
-<h1 class="text-center uptest">Request Phone unlocking</h1>
+<h1 class="text-center uptest blck">Request Phone unlocking</h1>
 
 @stop
 
