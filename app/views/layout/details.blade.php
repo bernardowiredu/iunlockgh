@@ -38,9 +38,9 @@
 
   <body>
     <div class="col-md-6 col-md-offset-3">
-    <div class="well mb">
+    <div class=" well well-sm">
 
-      <h4 class="text-center yellow"> ODRER WITH IMEI {{$payment->imei}}</h4>
+      <h4 class="text-center blck"> ODRER WITH IMEI {{$payment->imei}}</h4>
 
     </div>
           <!-- <input type="text" class="form-controller" placeholder="Search for order by entering your IMEI eg.895876758746565"><span><button class="btn btn-info">search</button></span>
@@ -112,7 +112,7 @@
            Order Status
           </td>
           <td class="rd text-center">
-            Unlocked
+            <i class="fa fa-spinner fa-spin"></i> In process
             </td>
         </tr>
     </tbody>

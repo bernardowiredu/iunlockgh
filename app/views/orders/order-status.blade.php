@@ -51,7 +51,7 @@ If your order has been pending for an unusually long period of time or if you ha
 @if($read > 0)
 @foreach($payments as $payment)
 
-<h3 class="yellow text-center"><b>Your order IMEI {{$payment->imei}} </b></h3>
+<h3 class="blck text-center"><b>Your order IMEI {{$payment->imei}} </b></h3>
 <table class="table table-bordered mf">
       <tbody>
         <tr>
@@ -117,7 +117,7 @@ If your order has been pending for an unusually long period of time or if you ha
            Order Status
           </td>
           <td class="rd text-center">
-            Unlocked
+            <i class="fa fa-spinner fa-spin"></i> Unlocked
             </td>
         </tr>
        <!--  <tr>

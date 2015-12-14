@@ -66,10 +66,10 @@ You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, yo
 	</select>
 	
 	 <div class="col-md-6 move mg">
-    <h4  name="price"><span>Price: GH₵ </span><span id="money"></span></h4>
+    <h3  name="price"><span>Price: GH₵ </span><span id="money"></span></h3>
     </div>
     <div class="col-md-6 move mg">
-      <h4 name="price"><span>Time: </span><span id="days"></span></h4> 
+      <h3 name="price"><span>Time: </span><span id="days"></span></h3> 
     </div>
 	<br>
 	<label class="blck2">Enter a valid IMEI number<i class="text-danger"> **</i></label>
@@ -115,7 +115,7 @@ You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, yo
 	<p></p>
 
 
-	<p><button class="btn btn-warning"><i class="glyphicon glyphicon-phone"></i> Check Phone Status</button></p>
+	<p><button class="btn btn-success"><i class="glyphicon glyphicon-phone"></i> Check Phone Status</button></p>
 
 	<p></p>
 	{{Form::close()}}
@@ -123,7 +123,7 @@ You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, yo
 	  </div>
 	</div>
 
- <h4 class=" well mb"><b class="yellow">Product Description</b></h4>
+ <h4 class=" well well-sm"><b class="blue">Product Description</b></h4>
 
 This service is also extremely helpful if you intend to use our IMEI based iPhone factory unlocking service but before ordering you would want to make sure that your phone is locked to a carrier.
 

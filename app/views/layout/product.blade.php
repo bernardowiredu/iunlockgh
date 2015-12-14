@@ -347,7 +347,7 @@
                       <ins class="ab zmin sprite sprite-i-triangle block"></ins>
                     </div>
               <div class="person-text rel">
-                        <img src="../img/comt.png"><a title="">{{$cat->username}}</a>{{$cat->location}}
+                        <img src="../img/comt.png"><a title="">{{$cat->username}}</a><span class="blck">{{$cat->location}}</span>
               </div>
             </div>
      @endforeach

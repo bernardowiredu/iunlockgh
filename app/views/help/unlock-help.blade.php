@@ -4,7 +4,7 @@
 
 @section('header')
 
-<h1 class="text-center">UNLOCKING INSTRUCTION</h1>
+<h1 class="text-center blck">UNLOCKING INSTRUCTION</h1>
 
 
 @stop
@@ -15,7 +15,7 @@
 @section('content')
 <br>
 <img class="img-responsive"src="img/main-product.png">
-<h4 class="well mb"><b class="yellow">PHONE UNLOCKING GUIDE</b></h4>
+<h4 class="well f5"><b class="yellow">PHONE UNLOCKING GUIDE</b></h4>
 <p>The various are the unlocking steps of various devices. Different unlocking process will be added from time to time</p>
 <br>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -28,7 +28,7 @@
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body mb">
+      <div class="panel-body ">
         
 
 

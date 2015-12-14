@@ -30,28 +30,36 @@
 <p><font color="red"><b>NB: </font>note your IMEI for checking order status</b></p>
 
 
-
 <br>
 
-<div class="panel panel-inverse ">
-  <div class="panel-heading ny">
-    <h3 class="panel-title whyt"><font color="#fff">Payment Details <span><i class="glyphicon glyphicon-credit-card pull-right"></i></span></h3>
+<div class="panel panel-primary ">
+  <div class="panel-heading">
+    <h3 class="panel-title"><font color="#fff">Payment Details <span class="pull-right"><i class="glyphicon glyphicon-credit-card pull-right"></i></span></h3>
   </div>
   <div class="panel-body mf">
    
+    
 
      @include('common.notification')
 
   {{Form::open(array('url'=>'payment', 'method'=>'POST'))}}
+
+   <div class="form-group">
+    <label class="blck">YOUR ORDER IMEI</label>
+    <div class="input-group">
+    <input type="text" class="form-control" id="cardNumber" name="imei" value="{{$order->imei}}"required autofocus />
+    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+    </div>
+    </div>
 <p>
-      <label class="blck"><b>Your order contact number</b><i class="text-danger"> **</i></label></label>
+      <label class="blck">YOUR ORDER CONTACT NUMBER<i class="text-danger"> **</i></label></label>
      <input type="text" class="form-control" value="{{$order->order_contact}}"  name="telephone" >
      <strong class="red">Enter a valid mobile number to recieve order notifications</strong>
    </p>
-  <p>
+  <!-- <p>
       <label class="blck"><b>Your order imei</b><i class="text-danger"> **</i></label></label>
      <input type="text" class="form-control" value="{{$order->imei}}" name="imei">
-   </p>
+   </p> -->
     <input type="hidden" class="form-control" value="{{$order->price}}" name="price">
     <input type="hidden" class="form-control" value="{{$order->order_code}}" name="generated_code">
     <input type="hidden" class="form-control" value="{{$order->delivery}}" name="delivery_time">
@@ -65,11 +73,15 @@
       <div class="input-group">
       <div class="col-md-12">
       <div class="col-md-4">
-      <img src="../img/Old-Mobile-icon.png" width="128" height="128">
+      <img src="../img/Old-Mobile-icon.png" width="128" height="128"> 
       </div>
       <div class="col-md-8">
         <br><p></p>
         <div class="form-group">
+        <div class="">
+        <img src="../img/money_mobi.png" class="img-reponsive img-rounded" width="240" height="50">
+        </div>
+        <p>Enter the code sent to your phone via sms</p>
         <input type="text" minlength="5" maxlength="5" class="form-control" placeholder="Enter Pay Code" name="verified_code" required>
         <button class="btn btn-success"><i class=" glyphicon glyphicon-credit-card"></i><B> PAY FOR ODRER <span class="">GH₵{{$order->price}}</span></B></button>
         </div>
@@ -88,13 +100,15 @@
 </div>
 </div>
 
+
+
 <div class="well well-sm mb ">
 <h4 class="blue"><i class=" glyphicon glyphicon-credit-card"></i> PAYMENT GUIDE</h4>
 </div>
 <div class="well well-sm me">
 <p class="blue">Send mobile money to</p> 
-<p><img src="../img/mtn.jpg" width="70" height="50"><span class="blue"> =  <b>024072639</b></span></p>
-<p><img src="../img/Tigo-Cash-Logo.jpg" width="70" height="50"><span class="blue"> = <b>xxxxxxxxx</b></span></p>
+<p><img src="../img/mtn.jpg" width="70" height="50"><span class="blck"> =  <b>024072639</b></span></p>
+<p><img src="../img/Tigo-Cash-Logo.jpg" width="70" height="50"><span class="blck"> = <b>xxxxxxxxx</b></span></p>
 
 <h4><b class="blue">STEPS TO MAKE PAYMENT</b></h4>
 <ul class="nav blck">

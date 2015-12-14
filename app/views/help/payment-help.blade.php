@@ -3,7 +3,7 @@
 
 @section('header')
 
-<h1 class="text-center uptest">HOW TO MAKE PAYMENT</h1>
+<h1 class="text-center uptest blck">HOW TO MAKE PAYMENT</h1>
 
 
 @stop
@@ -11,6 +11,35 @@
 
 
 @section('content')
+
+<div class="container">
+	<div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="material-button-anim">
+          <ul class="list-inline" id="options">
+            <li class="option">
+              <button class="material-button option1" type="button">
+                <span class="fa fa-phone" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option2" type="button">
+                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option3" type="button">
+                <span class="fa fa-pencil" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+          <button class="material-button material-button-toggle" type="button">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+	</div>
+</div>
 <!-- <div class="well well-sm me">
 <h1 class="txt-shadow yellow"> <b>how to make payment</b></h1>
 </div> -->

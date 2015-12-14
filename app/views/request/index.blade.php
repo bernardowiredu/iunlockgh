@@ -17,7 +17,7 @@
 <div class="hidden-xs">
 <img src="img/mobile_phone.png"><img src="img/arrow.png" class="hidden-xs"><img src="img/unlock.png" class="hidden-xs">
 </div>
-<h4 class="well mb yellow"><b class="yellow">REQUEST UNLOCKER – Select phone ,Carrier, and IMEI number..</b></h4>
+<h4 class="well f5"><b class="blue">REQUEST UNLOCKER – Select phone ,Carrier, and IMEI number..</b></h4>
 
 <!-- <h4 class="yellow"><b><i>REQUEST UNLOCKER – Select phone ,Carrier, and IMEI number..</i></b></h4> -->
 
@@ -27,7 +27,7 @@ we will further search for the model in our database  and contact customer throu
 
 
 <!--  <h4 class="yellow"><b><i>REQUEST PHONE UNLOCK</i></b></h4> -->
-<h4 class="well ny ellow"><b class="blck">Follow the request unlocking procedure to request phone unlocking</b></h4>
+<h4 class=" well well-sm"><b class="blck">Follow the request unlocking procedure to request phone unlocking</b></h4>
 
  <ul class="nav">
  <li>1. Select Phone Manufacturer of the phone you requesting for unlocking.</li>
@@ -42,16 +42,16 @@ we will further search for the model in our database  and contact customer throu
 
 
 
-<div class="panel panel-default">
+<div class="panel panel-primary">
   <div class="panel-heading">Phone unlock request</div>
-  <div class="panel-body mb">
+  <div class="panel-body blck">
 
 @include('common.notification')
 
 {{Form::open(array('url'=>'request', 'method'=>'POST'))}}
 
 
-<label>Select Brand</label>
+<label class="blck">Select Brand</label>
 <select  name="brand" class="form-control">
    <option>Acatel</option>
    <option>Apple</option>
@@ -71,19 +71,19 @@ we will further search for the model in our database  and contact customer throu
 </select>
 <p></p>
 
-<label>Enter Phone model<i class="text-danger"> **</i></label>
+<label class="blck">Enter Phone model<i class="text-danger"> **</i></label>
 <input type="text" class="form-control" name="model" placeholder="eg. iphone 5s, samsung galaxy S2 GT i9100, blackberry 8520 Curve" required>
 <p></p>
 
-<label>Carrier locked to <i class="text-danger"> **</i></label>
+<label class="blck">Carrier locked to <i class="text-danger"> **</i></label>
 <input type="text" class="form-control" placeholder="eg.AT&T" name="carrier">
 <p></p>
 
-<label>Enter your IMEI number<i class="text-danger"> ** 15 digits</i></label>
+<label class="blck">Enter your IMEI number<i class="text-danger"> ** 15 digits</i></label>
 <input type="text" class="form-control" maxilength="15" minilength="15" placeholder="dial *#06# to get Imei number" name="imei">
 <p></p>
 
-<label>Enter your phone number or email<i class="text-danger"> **</i></label>
+<label class="blck">Enter your phone number or email<i class="text-danger"> **</i></label>
 <input type="text" class="form-control" placeholder="eg.0545343660" name="telephone">
 <p></p>
 
