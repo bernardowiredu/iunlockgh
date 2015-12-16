@@ -7,7 +7,7 @@
 <br><br>
 
  <!--  <h1>PerfectUnlockgh.com</h1> -->
-<div class="nav f5">
+<div class="nav">
   <div class="span7">
 	<div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
 	<img src="img/homepage-image-bootloader.png" class="img-responsive" width="380" height="350">
@@ -27,7 +27,7 @@
   </div>
 	</div>
   </div>
-	<div class="col-sm-5 col-md-5 bg-n">
+	<div class="col-sm-offset-1 col-md-4 mf">
  
 
      {{ Form::open(array('url' => 'login', 'method'=>'POST', 'class' => 'form-signin')) }}
