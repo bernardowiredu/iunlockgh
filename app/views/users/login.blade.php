@@ -27,7 +27,7 @@
   </div>
 	</div>
   </div>
-	<div class="col-sm-offset-1 col-md-4 mf">
+	<div class="col-sm-offset-1 col-md-4 curvy2 f5">
  
 
      {{ Form::open(array('url' => 'login', 'method'=>'POST', 'class' => 'form-signin')) }}
@@ -52,7 +52,7 @@
         <button class="btn btn-lg  btn-primary btn-block" type="submit"><i class="glyphicon glyphicon-hand-right"></i> Sign in</button
       </form>
       <p></p>
-      <p class="text-center"><a href="{{URL::to('forgotten-password')}}" class="btn btn-danger"><font color="#fff">Forgotten password ? click here</font></a></p>
+      <p class="text-center"><a href="{{URL::to('forgotten-password')}}"><font color="#000">Forgotten password ? click here</font></a></p>
 
       
        <h3 class="text-primary text-center">I'm a new customer</h3>

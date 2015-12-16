@@ -52,7 +52,7 @@
 
   <body>
  <!--  <div class="container"> -->
-<!-- 
+
  
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -67,7 +67,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
+           <!--  <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMEI CHECKER <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="{{URL::to('')}}">Network Lock Check</a></li>
@@ -76,14 +76,14 @@
                   <li><a href="{{URL::to('signout')}}">Sprint USA - All iPhone Eligibility Test Clean/Blacklist/Unpaid Bill</a></li>
                   
                   </ul>
-              </li>
+              </li> -->
               <li><a href="#"><i class="glyphicon glyphicon-user small"></i> LOGIN</a></li>
             <li><a href="#"><i class="glyphicon glyphicon-user small"></i> REGISTER</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    -->
+   
 
     @yield('content')
 

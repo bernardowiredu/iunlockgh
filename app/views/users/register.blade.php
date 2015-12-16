@@ -5,7 +5,7 @@
 
 @section('content')
 <br>
-<div class="nav f5">
+<div class="nav">
 <div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
 <img src="img/i-banner.png" class="img-responsive" width="500" height="400">
 <div class="animatedParent" data-sequence="500">
@@ -28,7 +28,7 @@
 <br>
 </div>
 
-<div class="col-sm-offset-1 col-md-4 bg-n"> 
+<div class="col-sm-offset-1 col-md-4  curvy2 mf"> 
 <div class="visible-xs">
 <h3 class="form-signin-heading text-primary">Register account</h3>
 </div>
