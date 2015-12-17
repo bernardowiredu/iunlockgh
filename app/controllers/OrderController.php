@@ -100,6 +100,8 @@ class OrderController extends BaseController {
 
 		$validator = Validator::make($posted, $rules);
 
+		if(Auth::check()) {}
+
 			if($validator->passes()) {
 
 			
@@ -144,10 +146,10 @@ class OrderController extends BaseController {
 			$order->save();
 
 			
-            Mail::send('email.order', array('product_name'=>Input::get('product_name'), 'price'=>Input::get('price'), 'delivery'=>Input::get('delivery'), 'network_name'=>Input::get('network_name'), 'imei'=>Input::get('imei')), function($message){
+           /* Mail::send('email.order', array('product_name'=>Input::get('product_name'), 'price'=>Input::get('price'), 'delivery'=>Input::get('delivery'), 'network_name'=>Input::get('network_name'), 'imei'=>Input::get('imei')), function($message){
             $message->from('bernardkissi18@gmail.com', 'PerfectUnlockgh');
             $message->to(Input::get('email'), Input::get('product_name'), Input::get('price'), Input::get('delivery'), Input::get('network_name'))->subject('You have successfully created your order');
-            });
+            });*/
 
 			
 		    return Redirect::to('confirm-order')->with('message','Ensure to complete order within 48hrs else 

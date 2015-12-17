@@ -750,11 +750,11 @@
             </div>
      @endforeach
 </div>
-   
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54aa72200f04f9db" async="async"></script>
 
- -->    
+<!-- social media plugin -->
+ <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5672d22e179206b6" async="async"></script>
+
  <br>
    <div class="nav">
     <div class="well well-sm mb">
@@ -891,10 +891,7 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bfd49f46970d36" async="async"></script>
-
-    <!-- Placed at the end of the document so the pages load faster -->
+      <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../public/js/jQuery.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>

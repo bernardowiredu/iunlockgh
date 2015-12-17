@@ -1,4 +1,4 @@
-<?php
+           <?php
 
 
 class PaymentController extends BaseController {
@@ -90,7 +90,7 @@ class PaymentController extends BaseController {
 
 			if($verified != $generated){
 
-				return Redirect::back()->with('error', 'The PAYCODE <b>' .$verified.'</b> entered is incorrect');
+				return Redirect::back()->with('error', 'The PAYCODE <b>' .$verified.'</b> entered is incorrect for this order');
 			}
 
 			try{
