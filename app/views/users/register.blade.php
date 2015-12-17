@@ -4,7 +4,7 @@
 
 
 @section('content')
-<br>
+<br><br>
 <div class="nav">
 <div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
 <img src="img/i-banner.png" class="img-responsive" width="500" height="400">

@@ -9,7 +9,7 @@
 
  <div class="notice notice-danger">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong><i class="glyphicon glyphicon-remove-sign"></i><b> Failed!</b></strong> {{ Session::get('error') }}
+  <strong><i class="glyphicon glyphicon-remove-sign"></i><b> Failed!</b></strong> <span class="blck">{{ Session::get('error') }}</span>
 </div>
 
 @elseif(Session::has('message'))
