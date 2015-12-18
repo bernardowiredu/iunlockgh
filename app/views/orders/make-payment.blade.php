@@ -32,8 +32,8 @@
 
 <br>
 
-<div class="panel panel-primary ">
-  <div class="panel-heading">
+<div class="panel panel-inverse ">
+  <div class="panel-heading ny">
     <h3 class="panel-title"><font color="#fff">Payment Details <span class="pull-right"><i class="glyphicon glyphicon-credit-card pull-right"></i></span></h3>
   </div>
   <div class="panel-body mf">
