@@ -5,7 +5,7 @@
 
 <br><br>
 
-<div class="nav f5">
+<div class="nav">
 <div class="col-sm-offset-1 col-md-2 push ">
 	<img src="img/lock_lock.png" class="img-responsive">
  
@@ -13,7 +13,7 @@
    -->
 </div>
 
-<div class="col-sm-6 col-md-7 line2 push bg-n">
+<div class="col-sm-6 col-md-7 line2 push mf">
 
 
 {{ Form::open(array('url' => 'forgotten-password', 'method'=>'POST')) }}

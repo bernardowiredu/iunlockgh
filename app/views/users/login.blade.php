@@ -17,11 +17,11 @@
   <h2 class="animated bounceIn txt-shadow" data-id="1">Unlock your cell phone and use any network!</h2>
   <p>
 		<ul class="nav big">
-			<li><i class="glyphicon glyphicon-ok whyt animated bounceInLeft" data-id='2'></i> We offer our services at the cheapest rates</li><p></p>
-			<li><i class="glyphicon glyphicon-ok whyt animated bounceInLeft" data-id='3'></i> We offer 100% Money back guarantee.</li><p></p>
-			<li><i class="glyphicon glyphicon-ok whyt animated bounceInLeft" data-id='4'></i> We offer unlock which is permanent and doesn’t void warranty.</li><p></p>
-			<li><i class="glyphicon glyphicon-ok whyt animated bounceInLeft" data-id='5'></i> We provide technical support after unlocking your iPhone</li><p></p>
-			<li><i class="glyphicon glyphicon-ok whyt animated bounceInLeft" data-id='6'></i> After using our service, your device can use any sim</li><p></p>
+			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='2'></i> We offer our services at the cheapest rates</li><p></p>
+			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='3'></i> We offer 100% Money back guarantee.</li><p></p>
+			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='4'></i> We offer unlock which is permanent and doesn’t void warranty.</li><p></p>
+			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='5'></i> We provide technical support after unlocking your iPhone</li><p></p>
+			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='6'></i> After using our service, your device can use any sim</li><p></p>
 		</ul>
 	</p>
   </div>

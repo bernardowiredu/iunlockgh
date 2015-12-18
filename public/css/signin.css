@@ -1,10 +1,20 @@
 body {
   padding-top: 20px;
   padding-bottom: 40px;
-  background:url(../img/bg.jpg); /*#e2e2e2*/
-  -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
-  -moz-box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
-   box-shadow:  0 1px 1px rgba(0, 0, 0, .2)
+  background:#e2e2e2; /**/url(../img/bg.jpg)
+   background-position:  80%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;  
+    -webkit-background-size:cover; 
+    opacity: 2;
+    filter-opacity:2;
+    visibility: transparent;
+    -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
+     box-shadow:  0 1px 1px rgba(0, 0, 0, .2)
 
 }
 
