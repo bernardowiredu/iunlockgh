@@ -42,8 +42,8 @@
               <div class="hole blu">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a href="">View</a></h4>
-              <span class="text-muted">orders</span>
+              <h4><a class="blck" href="">View</a></h4>
+              <!-- <span class="">orders</span> -->
             </div>
 
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
@@ -54,8 +54,8 @@
                <div class="hole green">
              <!--  <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a href="">View</a></h4>
-              <span class="text-muted">payments</span>
+              <h4><a class="blck" href="">View</a></h4>
+              <!-- <span class="">payments</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                <div class="plate rou2">
@@ -65,8 +65,8 @@
                <div class="hole rou">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a href="">View</a></h4>
-              <span class="text-muted">requests</span>
+              <h4><a class="blck" href="">View</a></h4>
+              <!-- <span class="">requests</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                <div class="plate voi2">
@@ -76,8 +76,8 @@
                <div class="hole voi">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a href="">View</a></h4>
-              <span class="text-muted">messages</span>
+              <h4><a class="blck" href="">View</a></h4>
+              <!-- <span class="">messages</span> -->
             </div>
           </div>
         </div>

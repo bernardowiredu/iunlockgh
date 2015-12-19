@@ -37,6 +37,8 @@
 
 @include('common.notification')
 
+<div class="col-sm-12 mf">
+
 {{Form::open(array('url'=>'request', 'method'=>'POST'))}}
 
 <h4 class="">To request for phone unlock fill the forms below</h4>
@@ -82,5 +84,7 @@
 <br><br>
 
 {{Form::close()}}
+
+</div> 
 
 @stop
