@@ -25,8 +25,8 @@ If your order has been pending for an unusually long period of time or if you ha
 *If your order is not found in the system, PLEASE DO NOT WORRY, as your order may have not been added to our system yet. Just contact us at contact@unlockcode4u.com and we will take care of the issue ASAP for you.
 
 <br><br>
-<div class="panel panel-primary">
-  <div class="panel-heading">
+<div class="panel panel-inverse">
+  <div class="panel-heading ny">
     <h3 class="panel-title blck"><font color="#fff">Search order<span class="pull-right"><i class="glyphicon glyphicon-search"></i></span></h3>
   </div>
   <div class="panel-body mf">

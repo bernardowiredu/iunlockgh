@@ -34,7 +34,7 @@
 
 
 @section('content')
-<div class="col-sm-5 col-md-5 well well-sm away mc">
+<div class="col-sm-5 col-md-5 well well-sm away blck mf">
 <div class="page-header">
 <h3 class="txt-shadow">Contact us</h3>
 </div>
@@ -46,7 +46,7 @@
 <p> For order related inquiries, please call our helpline <b>0503214360</b> for assistance .</p>
 </div>
 <p></p>
-<div class="col-sm-7 col-md-6 well well-lg ny blck">
+<div class="col-sm-7 col-md-6 well well-lg mf blck">
 
 @include('common.notification')
 

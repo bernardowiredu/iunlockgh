@@ -91,7 +91,7 @@ body {
 .nav-sidebar >  li >  a:focus,
 .nav-sidebar >  li > a:hover{
   color: #000;
-  background-color: #F0EDE9;
+  background-color: #f5f5f5;
   border-left: 4px solid #0088cc;
 }
 
@@ -102,7 +102,7 @@ body {
 
 .main {
   padding: 20px;
-  background:#F0EDE9;
+  background:#F5f5f5;
   color:#000;
   border-radius: 1px;
 }

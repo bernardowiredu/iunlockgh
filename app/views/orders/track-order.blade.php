@@ -56,7 +56,7 @@
 
 <div class="col-sm-3 col-md-5">
 @foreach($payments as $payment)
-<h4 class=" well well-sm blck"><b>Your order IMEI {{$payment->imei}} </b></h4>
+<h4 class=" well well-sm blck mf"><b>Your order IMEI {{$payment->imei}} </b></h4>
 <p>Phone name: <b class="red">{{$payment->product_model}}</b> <a href="{{URL::to('order-details/' .$payment->id)}}"> View full order here</a>  </p>
 <p>Network locked to: <b>{{$payment->network_name}}</b></p>
 <p>Delivery Time: <b>{{$payment->delivery_time}}</b></p>

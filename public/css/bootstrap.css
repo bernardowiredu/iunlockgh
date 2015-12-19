@@ -1264,8 +1264,9 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 }
 
-.uptest{
+.uptest, h1 .text-center .uptest{
   text-transform: uppercase;
+  color: #555555;
 
 }
 body {

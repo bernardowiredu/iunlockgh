@@ -197,7 +197,7 @@
 <div class="well well-sm"><h4 class="yellow"><div class="feed-2"></div></h4></div>
    
   
-<div class="well well-sm mb"><h4 class="yellow"><!-- <i class="glyphicon glyphicon-thumbs-up"></i -->
+<div class="well well-sm mf"><h4 class="yellow"><!-- <i class="glyphicon glyphicon-thumbs-up"></i -->
 
 @yield('header')
 
