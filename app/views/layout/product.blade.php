@@ -56,7 +56,7 @@
     <div class="container">
 
       <!-- Static navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top mf">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -65,14 +65,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">UnlockGh</span></a>
+            <a class="navbar-brand" href="#"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">unlockgh</span></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav">
               <!-- <li class=""><a href="#">Home</a></li> -->
        <!--        <li><a href="{{URL::to('imei-checker')}}">IMEI CHECKER</a></li> -->
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMEI CHECKER <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Imei Checker <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="{{URL::to('')}}">Network Lock Check</a></li>
                   <li><a href="{{URL::to('order-status')}}">Blacklisted/Barred/Clean Check</a></li>
@@ -81,9 +81,9 @@
                   
                   </ul>
               </li>
-               <li><a href="{{URL::to('request-unlock')}}">REQUEST UNLOCK</a></li>
+               <li><a href="{{URL::to('request-unlock')}}">Request Unlock</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HELP <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="{{URL::to('')}}">FAQs</a></li>
                   <li><a href="{{URL::to('order-status')}}">Check Order Status</a></li>
@@ -95,7 +95,7 @@
               </li>
 
               {{Form::open(array('url'=>'search', 'method'=>'GET', 'class'=>'navbar-form navbar-left'))}}
-              <li><input type="text" class="form-controller" data-provide="typeahead"  name="keyword"  placeholder="Search for your model eg. iPhone5"></li>
+              <li><input type="text" class="form-control" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
               {{Form::close()}}
               </ul>
 
@@ -197,7 +197,7 @@
 <div class="well well-sm"><h4 class="yellow"><div class="feed-2"></div></h4></div>
    
   
-<div class="well well-sm mf"><h4 class="yellow"><!-- <i class="glyphicon glyphicon-thumbs-up"></i -->
+<div class="notice notice-danger"><h4 class="yellow"><!-- <i class="glyphicon glyphicon-thumbs-up"></i -->
 
 @yield('header')
 
@@ -210,7 +210,7 @@
 
    </div> 
    <br> 
-   <div class="col-sm-6 col-md-3 cover f5">
+   <div class="col-sm-6 col-md-3 cover mf">
    <h4 class="blue"><b>Start unlocking here</b></h4>
    <select class="form-control" name="manufacturer">
    <option>Acatel</option>

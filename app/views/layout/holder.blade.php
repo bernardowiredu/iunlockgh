@@ -54,7 +54,7 @@
  <!--  <div class="container"> -->
 
  
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top mf">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -63,7 +63,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-           <a class="navbar-brand" href="{{URL::to('/')}}">Perfect<span class="yellow">UnlockGh</span></a>
+           <a class="navbar-brand" href="{{URL::to('/')}}">Perfect<span class="yellow">unlockgh</span></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -117,7 +117,7 @@
      <script src="../public/js/jquery-2.1.3.min.js"></script>
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src='js/css3-animate-it.js'></script>
-    <script src='js/strength.js'></script>
+   <!--  /*<script src='js/strength.js'></script>*/ -->
     <script type="text/javascript">
 
      $('.feed-2').breakingNews({

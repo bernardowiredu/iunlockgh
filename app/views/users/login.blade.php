@@ -14,7 +14,7 @@
   
 	
 	<div class="animatedParent" data-sequence="500">
-  <h2 class="animated bounceIn txt-shadow" data-id="1">Unlock your cell phone and use any network!</h2>
+  <h3 class="animated bounceIn txt-shadow" data-id="1">Unlock your cell phone and use any network!</h3>
   <p>
 		<ul class="nav big">
 			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='2'></i> We offer our services at the cheapest rates</li><p></p>

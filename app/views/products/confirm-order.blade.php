@@ -22,7 +22,7 @@
 @foreach($orders as $order)
 <img src="{{$order->image}}" alt="" class="img-responsive hidden-xs curvy"  width="140" height="110">
 <br>
- <div class="alert alert-success alert-dismissible" role="alert">
+ <div class="notice notice-success" role="alert">
  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 <strong>{{$order->product_name}} <i class="glyphicon glyphicon-ok-sign"></i></strong> 
 </div>

@@ -17,7 +17,7 @@
 @foreach($products as $product)
 <div class="col-xs-6 col-md-3 ">
  <a href="#" class="thumbnail mf">
-      <img src="img/iphone6-plus.jpg" alt="product" width="100" height="70">
+      <img src="{{$product->reasons}}" alt="product" width="100" height="70">
     </a>
     <div class="caption me2">
     <p class="text-center"><a class="whyt" href="{{URL::to('product/' .$product->id)}}"><spans>{{$product->product_name}}</span></a></p>

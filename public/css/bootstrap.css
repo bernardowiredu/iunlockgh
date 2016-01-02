@@ -4801,6 +4801,7 @@ color: #fff;
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
+  color: #000;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -4808,17 +4809,16 @@ color: #fff;
   border-width: 1px 0 0;
 }
 .lo{
- font-family: 'Berkshire Swash', cursive;
+
 }
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 12px 12px;
   font-size: 25px;
   font-weight: 500;
   line-height: 20px;
   color: #fff;
-font-family: 'Berkshire Swash', cursive;
   /*font-weight: 600;*/
 }
 .navbar-brand:hover,
@@ -5040,7 +5040,8 @@ font-family: 'Berkshire Swash', cursive;
   border-color: #e7e7e7;
    -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
   -moz-box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
-   box-shadow:  0 1px 1px rgba(0, 0, 0, .2)
+   box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
+   color:#000;
 
 }
 .navbar-default .navbar-brand {
@@ -5055,11 +5056,12 @@ font-family: 'Berkshire Swash', cursive;
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #000;
+  
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #000;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,

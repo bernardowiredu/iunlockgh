@@ -26,7 +26,7 @@
 
 @section('header')
 
-<img src="../public/img/mobile_phone.png">Unlock request
+<img src="../public/img/mobile_phone.png"><h>Unlock Request</h1>
 
 @stop
 

@@ -9,7 +9,7 @@
 <div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
 <img src="img/i-banner.png" class="img-responsive" width="500" height="400">
 <div class="animatedParent" data-sequence="500">
-<h2 class="animated bounceIn txt-shadow" data-id="1">You are few seconds away from unlocking your device!</h2>
+<h3 class="animated bounceIn txt-shadow" data-id="1">You are few seconds away from unlocking your device!</h3>
 <h4>Create account to start unlocking devices </h4>
 
 <ul class="nav big">
@@ -103,7 +103,7 @@
 <script src="../public/js/jquery-1.8.2.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="../public/js/css3-animate.js"></script>
-
+<script src="../public/js/strength.js"></script>
 <!-- <script src="../public/js/strength.js"></script> -->
 <script type="text/javascript">
  $('#exampleInputEmail1').tooltip( 'please enter your username' );

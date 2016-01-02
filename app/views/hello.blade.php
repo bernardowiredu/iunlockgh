@@ -18,7 +18,7 @@
      --><!-- Bootstrap core CSS -->
      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
        <link href="../public/css/bootstrap.css" rel="stylesheet">
      <link href="../public/css/popup.css" rel="stylesheet">
        <link href="../public/css/notice.css" rel="stylesheet">
@@ -56,7 +56,7 @@
     <div class="container ">
 
       <!-- Static navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top mf">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -65,13 +65,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-           <a class="navbar-brand" href="{{URL::to('/')}}"><!-- <i class="glyphicon glyphicon-phone yellow"> --></i>Perfect<span class="yellow">unlockGh</span></a>
+           <a class="navbar-brand" href="{{URL::to('/')}}"></i>Perfect<span class="yellow">unlockgh</span></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav">
               <!-- <li class=""><a href="#">Home</a></li> -->
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMEI CHECKER <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Imei Checker <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="{{URL::to('imei-checker')}}">NETWORK LOCK CHECK</a></li>
                   <li><a href="{{URL::to('imei-checker')}}">BLACKLISTED/BARRED/CLEAN CHECK</a></li>
@@ -82,9 +82,9 @@
               </li>
               <!-- <li><a href="{{URL::to('imei-checker')}}">IMEI CHECKER</a></li> -->
              <!--  <li><a href="{{URL::to('checkmend')}}">CHECKMEND</a></li> -->
-               <li><a href="{{URL::to('request')}}">REQUEST UNLOCK</a></li>
+               <li><a href="{{URL::to('request')}}">Request Unlock</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HELP <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                    <li><a href="{{URL::to('')}}">FAQs</a></li>
                   <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
@@ -96,7 +96,7 @@
               </li>
 
                {{Form::open(array('url'=>'search', 'method'=>'GET', 'class'=>'navbar-form navbar-left'))}}
-              <li><input type="text" class="form-controller" list="name" data-provide="typeahead"  name="keyword"  placeholder="Search for your model eg. iPhone5"></li>
+              <li><input type="text" class="form-control" list="name" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
               <datalist id="name" class="open">
                 @foreach($products as $product)
                   <option>{{$product->product_name}}</option>
@@ -220,7 +220,7 @@
 
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="well mg">
+      <div class="well mf">
        <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
       <!-- Indicators -->
       <ul class="nav nav-pills nav-justified">
@@ -596,7 +596,7 @@
          <div class="contenthover">
            <span class="whyt">14 Phones unlocked</span>
           </div>
-          <p class="smll">Click here to unlock your iPhone 4s</p>
+          <p class="">Click here to unlock your iPhone 4s</p>
           <center><img src="../public/img/5stars.png"></center>
           <button class="btn btn-success"><i class="fa fa-unlock"></i> <b>Unlock Phone</b></button>
         </div>
@@ -617,7 +617,7 @@
 
   </div>
    </div>  
-   <div class="col-sm-6 col-md-3 cover f5">
+   <div class="col-sm-6 col-md-3 cover mf">
    <h4 class="blue"><b>Start unlocking here</b></h4>
    <select class="form-control" name="manufacturer">
    <option>Acatel</option>
@@ -676,7 +676,7 @@
    <p>
     <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="220" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
    </p>
-   <div class="well well-sm me"><h4 class="yellow text-center"><b>BLOG LATEST UPDATES</b></h4>
+   <div class="well well-sm me"><h4 class="blck text-center"><b>BLOG LATEST UPDATES</b></h4>
    <ul class="list-group mg">
      <li class="list-group-item mb"><a href="">new ways to unlock your android device to root your phone</li>
      <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>

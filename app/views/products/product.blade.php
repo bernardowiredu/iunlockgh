@@ -21,7 +21,7 @@
 <img src="{{$phones->image}}" alt="" class="img-responsive curvy"  width="140" height="110">
 <!-- <div class="caption me2"> -->
       <p class="text-center">
-        <div class="alert alert-info alert-dismissible" role="alert">
+        <div class="notice notice-danger" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <strong>{{$phones->product_name}}</strong> 
         </div>
@@ -96,13 +96,15 @@ before proceeding if not certain about order</p>
       <label class="blck"><b>Email</b><i class="text-danger"> <b>**</b></i></label></label>
      <input type="text" class="form-control"  id="email" placeholder="Enter Email address" name="email">
    </p>
-   <p><button id="btn_id" class="btn btn-danger"><span class="badge"> 1</span> CONTIUNE UNLOCKING YOUR {{$phones->product_name}} &raquo;</button></p>
-
     <input type="hidden"  id="product_name" class="form-control" value="{{$phones->product_name}}" name="product_name">
     <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
     <input type="hidden"  id="p_id" class="form-control" value="{{$phones->reasons}}" name="image">
-      <input type="hidden"  id="p_id" class="form-control" value="{{$phones->image}}" name="image2">
-
+    <input type="hidden"  id="p_id" class="form-control" value="{{$phones->image}}" name="image2">
+     @if(!Auth::check())
+      <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login to contiune</a>
+      @else
+     <p><button id="btn_id" class="btn btn-danger"><span class="badge"> 1</span> CONTIUNE UNLOCKING YOUR {{$phones->product_name}} &raquo;</button></p>
+     @endif
 
 {{Form::close()}}
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -110,6 +112,32 @@ before proceeding if not certain about order</p>
  -->
 
 
+  </div>
+</div>
+
+ {{ Form::open(array('url' => 'sigin', 'method'=>'POST')) }}
+<div class="modal fade" id="siModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2"><i class="glyphicon glyphicon-user"></i> SIGN IN</h4>
+      </div>
+      <div class="modal-body">
+      @include('common.notification')
+      <label class="blck">Email Address</label>
+      <input type="text" class="form-control" name="email" placeholder="enter your email"><br>
+      <label class="blck">Password</label>
+      <input type="password" class="form-control" name="password_confirmation" placeholder="enter your password">
+      </div>
+      <div class="modal-footer">
+      <button  type="submit" class="btn btn-primary">Signin</button>
+      {{Form::close()}}
+      <a href="{{URL::to('register')}}"><button type="button" class="btn btn-success">Register</button></a>
+     
+        
+      </div>
+    </div>
   </div>
 </div>
 
@@ -169,7 +197,7 @@ Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio,</p> -->
 <br>
 <div class="nav">
 <div class="well well-sm">
-<h4 class="blue"><i class="glyphicon glyphicon-phone"></i> Begin unlocking your {{$phones->product_name}}</h4>
+<h4 class="blck2"><i class="glyphicon glyphicon-phone"></i> Begin unlocking your {{$phones->product_name}}</h4>
 </div>
 
 
@@ -177,7 +205,7 @@ Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio,</p> -->
 
 
 
-<div class="well cover mg">
+<div class="well well-lg mf">
 <h4 class="blue"><b>Reasons to unlock {{$phones->product_name}} from Us</b></h4>
 <ul class="text-left">
 <li>Unlock your phone from the comfort of your own home.</li>

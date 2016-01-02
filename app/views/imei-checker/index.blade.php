@@ -12,7 +12,7 @@
 @section('content')
 
 <br>
-<div class="well well-lg mg">
+<div class="well well-lg mf">
 <div class="col-md-offset-1">
 <img src="../public/img/steps.png" class="img-responsive">
 <div class="col-md-3 col-md-offset-0 hidden-xs">
@@ -34,7 +34,7 @@
 
 </div>
 
-<h4 class="well well-sm"><b class="blue">IMEI Checker – Check Carrier, Lock Status and Firmware, Model name....</b></h4>
+<div  class="well well-sm mf">IMEI Checker – Check Carrier, Lock Status and Firmware, Model name..</div>
 
 IMEI checking service is to check info like carrier name, lock status, model name, Serial, iOS firmware, ICCID, Activation status and some other details. 
 
@@ -45,7 +45,7 @@ You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, yo
 
 <br>
 
-<div class="panel panel-primary">
+<div class="panel panel-default">
   <div class="panel-heading blck">IMEI CHECKER<span class="pull-right"><i class="glyphicon glyphicon-phone"></i></span></div>
   <div class="panel-body mf">
 
@@ -123,7 +123,7 @@ You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, yo
 	  </div>
 	</div>
 
- <h4 class=" well well-sm"><b class="blue">Product Description</b></h4>
+ <h4 class=" well well-sm mf">Product Description</h4>
 
 This service is also extremely helpful if you intend to use our IMEI based iPhone factory unlocking service but before ordering you would want to make sure that your phone is locked to a carrier.
 
