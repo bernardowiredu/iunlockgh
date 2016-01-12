@@ -43,7 +43,7 @@ class UserController extends BaseController {
 		'email'=>'required|email|unique:users',
 		'password'=>'required|between:8,12|confirmed',
 		'password_confirmation'=>'required|between:8,12',
-		'telephone'=>'required'
+		'telephone'=>'required|unique:users'
 
 		);
 
@@ -92,6 +92,18 @@ class UserController extends BaseController {
 		return Redirect::to('login')->with('error', 'Your email/password combination was incorrect');
 	}
 
+
+
+    public function postSign() {
+
+        $posted = Input::get();
+
+        if (Auth::attempt(array('email'=>$posted['email'], 'password'=>$posted['password_confirmation']))) {
+            return Redirect::back();
+        }
+
+        return Redirect::back()->with('error', 'Your email/password combination was incorrect');
+    }
 
 
 	public function getPassword(){
