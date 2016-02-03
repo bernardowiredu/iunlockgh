@@ -40,7 +40,7 @@
    
     
 
-     @include('common.notification')
+     
 
   {{Form::open(array('url'=>'payment', 'method'=>'POST'))}}
 
@@ -82,6 +82,7 @@
         <img src="../img/money_mobi.png" class="img-reponsive img-rounded" width="240" height="50">
         </div>
         <p>Enter the code sent to your phone via sms</p>
+        @include('common.notification')
         <input type="text" minlength="5" maxlength="5" class="form-control" placeholder="Enter Pay Code" name="verified_code" required>
         <button class="btn btn-success"><i class=" glyphicon glyphicon-credit-card"></i><B> PAY FOR ODRER <span class="">GH₵{{$order->price}}</span></B></button>
         </div>

@@ -208,8 +208,7 @@
    
 </div>
 <br><br>
-<div class="well well-sm mb"><h4 class="yellow"><i class="glyphicon glyphicon-comment"></i> Testmonials:- what our customers say about us <span class="pull-right hidden-xs" data-toggle="modal" data-target="#exampleModal"> <font family="Arial">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></span></div></h4>
-
+<div class="well well-sm mb"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i> <b> Testmonials:- What our customers say about us </b><span class="pull-right hidden-xs"> <font family="Arial"><a class="pull-right" href="{{URL::to('reviews')}}">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></a></span></div></h4>
 
     <!-- ******************************************MODAL POPUP FOR REVIEWS OR COMMENTS********************************* -->
 

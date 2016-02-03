@@ -79,11 +79,11 @@
               <br><br><br><br><br><br>                                                                                                                                                                               
         @include('common.notification')                                                                                                                                                                                                                                                                                                              
       {{Form::open(array('url'=>'btc', 'method'=>'POST'))}}
+      <br>
       <h4><b>Step 1</b></h4>
       <ol>1. Copy and transfer the money to the bitcoin address below.</ol>
       
-        <label class="blck"><b></b></label>
-        <h3 class="text-center"><span class="blck">BTC address</span><br><span class="text-primary">13QhZDyXxwd86kog7CeXY8urazmfjEZzRa</span></h3> 
+        <h4 class="text-center"><span class="blck">BTC address</span><br><span class="text-primary">13QhZDyXxwd86kog7CeXY8urazmfjEZzRa</span></h4> 
       <!-- <span class="red">Enter a valid mobile number to recieve order notifications</span> -->
      
 
@@ -107,8 +107,8 @@
       <h4><b>Step 2</b></h4>
       <ol>1.After transfer has been completed copy and paste transcation hash in the form below.
       </ol>
-      <ol>2. And click on confirm payment to verify your transcation u will be notified once we confirm and verify.<br>
-      <p class="red text-center">NB: Confirmation takes 5-10 minutes before verification is completed.</p></ol>
+      <ol>2. And click on confirm payment to verify your transcation you will be notified once we confirm and verify.<br>
+      <p class="red text-left"><b>NB: Confirmation takes 5-10 minutes before verification is completed.</p></b></ol>
       <p>
       <label class="blck"><b> Copy and paste transcation hash</b><i class="text-danger"></i></label></label>
       <input type="text" class="form-control" name="payment_hash" placeholder="eg.8c7c0dd4cab61080c97ea1ad1ae20284c13238f01badd548f068568a3f4d5ffa">

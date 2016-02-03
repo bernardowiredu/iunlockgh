@@ -2,7 +2,7 @@
 
 
 @section('header')
-<h1 class="text-center uptest blck">search results for "{{$keyword}}"</h1>
+<h1 class="text-center uptest blck2">search results for "{{$keyword}}"</h1>
 
 @stop
 
@@ -19,8 +19,8 @@
  <a href="#" class="thumbnail mf">
       <img src="{{$product->reasons}}" alt="product" width="100" height="70">
     </a>
-    <div class="caption me2">
-    <p class="text-center"><a class="whyt" href="{{URL::to('product/' .$product->id)}}"><spans>{{$product->product_name}}</span></a></p>
+    <div class="caption f5">
+    <p class="text-center"><a class="blck2" href="{{URL::to('product/' .$product->id)}}"><spans>{{$product->product_name}}</span></a></p>
    </div>
 <p></p>
 </div>

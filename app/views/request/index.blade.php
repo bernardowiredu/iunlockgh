@@ -5,7 +5,7 @@
 @section('header')
 
 
-<h1 class="text-center uptest blck">Request Phone unlocking</h1>
+<h1 class="text-center uptest blck2">Request Phone unlocking</h1>
 
 @stop
 
@@ -17,7 +17,7 @@
 <div class="hidden-xs">
 <img src="img/mobile_phone.png"><img src="img/arrow.png" class="hidden-xs"><img src="img/unlock.png" class="hidden-xs">
 </div>
-<h4 class="well f5"><b class="blue">REQUEST UNLOCKER – Select phone ,Carrier, and IMEI number..</b></h4>
+<h4 class="well mf"><b class="blue">REQUEST UNLOCKER – Select phone ,Carrier, and IMEI number..</b></h4>
 
 <!-- <h4 class="yellow"><b><i>REQUEST UNLOCKER – Select phone ,Carrier, and IMEI number..</i></b></h4> -->
 
@@ -31,9 +31,9 @@ we will further search for the model in our database  and contact customer throu
 
  <ul class="nav">
  <li>1. Select Phone Manufacturer of the phone you requesting for unlocking.</li>
- <li>2. Enter the model of the phone eg. <b class="yellow">iphone 5s, samsung galaxy S2 GT i9100, blackberry 8520 Curve.</b></li>
- <li>3. Enter the carrier the phone is locked to  eg. <b class="yellow">AT&T, Verison, Movistar.</b></li>
- <li>4. Enter phone's IMEI number <b class="yellow">usually a 15 digits number or dial *#06# to get Imei number.</b></li>	
+ <li>2. Enter the model of the phone eg. <b class="blue">iphone 5s, samsung galaxy S2 GT i9100, blackberry 8520 Curve.</b></li>
+ <li>3. Enter the carrier the phone is locked to  eg. <b class="blue">AT&T, Verison, Movistar.</b></li>
+ <li>4. Enter phone's IMEI number <b class="blue">usually a 15 digits number or dial *#06# to get Imei number.</b></li>	
  <li>5. Enter your mobile number or Email through which you can be contacted.</b></li>
 
  </ul>
@@ -53,6 +53,7 @@ we will further search for the model in our database  and contact customer throu
 
 <label class="blck">Select Brand</label>
 <select  name="brand" class="form-control">
+   <option>Select phone brand</option>
    <option>Acatel</option>
    <option>Apple</option>
    <option>Azumi</option>
@@ -66,6 +67,7 @@ we will further search for the model in our database  and contact customer throu
    <option>Microsoft</option>
    <option>Motorola</option>
    <option>Nokia</option>
+    <option>Samsung</option>
    <option>Sony</option>
    <option>ZTE</option>
 </select>

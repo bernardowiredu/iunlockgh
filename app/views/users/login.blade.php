@@ -10,11 +10,12 @@
 <div class="nav">
   <div class="span7">
 	<div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
+  <div class="animatedParent" data-sequence="500">
 	<img src="img/homepage-image-bootloader.png" class="img-responsive" width="380" height="350">
   
 	
-	<div class="animatedParent" data-sequence="500">
-  <h3 class="animated bounceIn txt-shadow" data-id="1">Unlock your cell phone and use any network!</h3>
+	
+  <h3 class="animated lightSpeedInLeft go txt-shadow" data-id="1">Unlock your cell phone and use any network!</h3>
   <p>
 		<ul class="nav big">
 			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='2'></i> We offer our services at the cheapest rates</li><p></p>

@@ -2,14 +2,15 @@
 <br><br>
 
  <!--  <h1>PerfectUnlockgh.com</h1> -->
-<div class="nav f5">
+<div class="nav">
   <div class="span7">
 	<div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
+  <div class="animatedParent" data-sequence="500">
 	<img src="img/homepage-image-bootloader.png" class="img-responsive" width="380" height="350">
   
 	
-	<div class="animatedParent" data-sequence="500">
-  <h2 class="animated bounceIn txt-shadow" data-id="1">Unlock your cell phone and use any network!</h2>
+	
+  <h3 class="animated lightSpeedInLeft go txt-shadow" data-id="1">Unlock your cell phone and use any network!</h3>
   <p>
 		<ul class="nav big">
 			<li><i class="glyphicon glyphicon-ok green animated bounceInLeft" data-id='2'></i> We offer our services at the cheapest rates</li><p></p>
@@ -22,7 +23,8 @@
   </div>
 	</div>
   </div>
-	<div class="col-sm-5 col-md-5 bg-n">
+  <br>
+	<div class="col-sm-offset-1 col-md-4 curvy2 mf">
  
 
      <?php echo Form::open(array('url' => 'login', 'method'=>'POST', 'class' => 'form-signin')); ?>
@@ -49,7 +51,7 @@
         <button class="btn btn-lg  btn-primary btn-block" type="submit"><i class="glyphicon glyphicon-hand-right"></i> Sign in</button
       </form>
       <p></p>
-      <p class="text-center"><a href="<?php echo URL::to('forgotten-password'); ?>" class="btn btn-danger"><font color="#fff">Forgotten password ? click here</font></a></p>
+      <p class="text-center"><a href="<?php echo URL::to('forgotten-password'); ?>"><font color="#000">Forgotten password ? click here</font></a></p>
 
       
        <h3 class="text-primary text-center">I'm a new customer</h3>
@@ -61,9 +63,20 @@
        
         <br>
     </div>
+    </div> 
 
-   
-</div> 
+
+<!--  <br>
+    <div class="nav">
+    <footer class="bgn text-center">
+      <div class="inline">
+        <p class="blck2">Copyright &copy; 2015 Perfectunlockgh.com all rights reserved. <a href="">Terms and conditions</a>
+        <ul class="nav">
+        </ul>
+        </p>
+      </div>
+      </div>
+    </footer>   -->
 
 
 

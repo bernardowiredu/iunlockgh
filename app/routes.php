@@ -25,6 +25,7 @@ Route::get('register', array('uses'=>'UserController@getRegister'));
 Route::get('forgotten-password', array('uses'=>'UserController@getPassword'));
 Route::post('user', array('before'=>'csrf', 'uses'=>'UserController@postRegister'));
 Route::post('login', array('before'=>'csrf', 'uses'=>'UserController@postSignin'));
+Route::post('sigin', array('before'=>'csrf', 'uses'=>'UserController@postSign'));
 Route::post('forgotten-password', array('uses'=>'UserController@postForgottenPassword'));
 
 });
@@ -98,6 +99,7 @@ Route::get('store/purchase', array('uses'=>'StoreController@getStore'));
 
 
 /******************************VIEW SHARE*************************************/
+Route::get('reviews', array('uses'=>'CommentController@getComments'));
 View::share('catnav', Comment::take(4)->orderBy('created_at','DESC')->get());
 View::share('upnav', Update::take(2)->orderBy('created_at','DESC')->get());
 View::share('products', Product::all());

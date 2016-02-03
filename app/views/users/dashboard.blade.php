@@ -24,7 +24,7 @@
 
 @section('header')
 
-<img src="../public/img/home.png"><span class="">{{Auth::user()->username}} Dashboard</span> 
+<img src="../public/img/home.png"><span class="blck2">{{Auth::user()->username}} Dashboard</span> 
 
 @stop
 
@@ -42,7 +42,7 @@
               <div class="hole blu">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+              <h4><a class="blck2" href="">View</a></h4>
               <!-- <span class="">orders</span> -->
             </div>
 
@@ -54,7 +54,7 @@
                <div class="hole green">
              <!--  <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+              <h4><a class="blck2" href="">View</a></h4>
               <!-- <span class="">payments</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
@@ -65,7 +65,7 @@
                <div class="hole rou">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+              <h4><a class="blck2" href="">View</a></h4>
               <!-- <span class="">requests</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
@@ -76,13 +76,13 @@
                <div class="hole voi">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+              <h4><a class="blck2" href="">View</a></h4>
               <!-- <span class="">messages</span> -->
             </div>
           </div>
         </div>
 
-          <h2 class="sub-header">Recent unlocking orders</h2>
+          <h2 class="sub-header blck2">Recent unlocking orders</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>

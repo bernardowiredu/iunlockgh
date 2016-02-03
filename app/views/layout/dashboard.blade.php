@@ -40,7 +40,7 @@
   <div class="container">
 
 
-  <nav class="navbar navbar-inverse navbar-fixed-top ">
+  <nav class="navbar navbar-default navbar-fixed-top mf">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -49,7 +49,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-           <a class="navbar-brand" href="#"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">unlockGh</span></a>
+           <a class="navbar-brand" href="#"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">unlockgh</span></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -82,11 +82,11 @@
           @yield('sidebar')
           
          <div class="col-sm-9  col-md-10 main">
-          <h2 class="page-header yellow">
+          <h1 class="page-header blck">
           
           @yield('header')
 
-          </h2>
+          </h1>
 
 
 

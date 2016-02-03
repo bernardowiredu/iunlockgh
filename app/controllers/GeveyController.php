@@ -16,7 +16,7 @@ class GeveyController extends BaseController
 
 		try{
 
-			$url = "http://sms.nasaramobile.com/api?api_key=5526d8e9e0ebe5526d8e9e0f32&&sender_id=PerfectLTD&&phone=0205223791&&message=".urlencode($message)."";
+			$url = "http://sms.nasaramobile.com/api?api_key=5526d8e9e0ebe5526d8e9e0f32&&sender_id=PerfectLTD&&phone=0560094454&&message=".urlencode($message)."";
 
 			$response = file_get_contents($url);
 
@@ -54,7 +54,7 @@ class GeveyController extends BaseController
 
               /*function ends here*/
 
-			return Redirect::back()->with('success', 'You have successfully  requested for the purchase of our gevey sim, you wil be soon be contacted');
+			return Redirect::back()->with('success', 'You have successfully  requested for the purchase of our gevey sim, you wil be contacted soon');
 		
 			}catch (Exception $e){
 				return Redirect::back()->with('error', 'Your order failed, please try again');

@@ -47,7 +47,7 @@
 <p></p>
 
 <div class="well well-sm me">
-<h4 class="yellow"><!-- <i class=" glyphicon glyphicon-credit-card"></i> --> HOW TO ADD MONEY INTO YOUR ACCOUNT</h4>
+<h4 class="blue"> HOW TO ADD MONEY INTO YOUR ACCOUNT</h4>
 </div>
 
 <div class="well mh">

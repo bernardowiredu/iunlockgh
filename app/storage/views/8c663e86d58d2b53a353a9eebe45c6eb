@@ -1,8 +1,8 @@
 <?php $__env->startSection('content'); ?>
 
-<br><br>
+<br><br><br>
 
-<div class="nav f5">
+<div class="nav">
 <div class="col-sm-offset-1 col-md-2 push ">
 	<img src="img/lock_lock.png" class="img-responsive">
  
@@ -10,13 +10,16 @@
    -->
 </div>
 
-<div class="col-sm-6 col-md-7 line2 push bg-n">
+
+
+
+<div class="col-sm-6 col-md-7 line2 push mf">
 
 
 <?php echo Form::open(array('url' => 'forgotten-password', 'method'=>'POST')); ?>
 
 <div class="animatedParent" data-sequence="100">
-<h1 class="blue" data-id='1'>Forgot your password?</h1>
+<h1 class="blue bounceIn" data-id='1'>Forgot your password?</h1>
 <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <p>Not to worry. Just enter your email address below and we'll send you an instruction email for recovery.</p>
 </div>

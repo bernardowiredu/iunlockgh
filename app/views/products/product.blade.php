@@ -106,15 +106,11 @@ before proceeding if not certain about order</p>
      <p><button id="btn_id" class="btn btn-danger"><span class="badge"> 1</span> CONTIUNE UNLOCKING YOUR {{$phones->product_name}} &raquo;</button></p>
      @endif
 
-{{Form::close()}}
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="../js/sol.js"></script> 
- -->
-
-
+    {{Form::close()}}
   </div>
-</div>
+  </div>
 
+<!--  -->
  {{ Form::open(array('url' => 'sigin', 'method'=>'POST')) }}
 <div class="modal fade" id="siModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
   <div class="modal-dialog" role="document">

@@ -3,7 +3,7 @@
 
 @section('header')
 
-<h1 class="text-center uptest blck">{{$category->name}} UNLOCKING</h1>
+<h1 class="text-center uptest blck2">{{$category->name}} UNLOCKING</h1>
 @stop
 
 

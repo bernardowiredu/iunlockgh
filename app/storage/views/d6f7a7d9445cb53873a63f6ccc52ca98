@@ -76,7 +76,7 @@
       <p>
       <label class="blck"><b>Contact number</b><i class="text-danger"> **</i></label></label>
       <input type="text" class="form-control" value="<?php echo $order->order_contact; ?>"  name="telephone" >
-      <span class="red">Enter a valid mobile number to recieve order notifications</span>
+      <span class="red"><b>Enter a valid mobile number to recieve order notifications</b></span>
       </p>
 
       <input type="hidden" class="form-control" value="<?php echo $order->product_name; ?>"  name="product_model" >

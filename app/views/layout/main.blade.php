@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Navbar Template for Bootstrap</title>
+    <title>Perfectunlockgh - unlock your phone at comfort of your home</title>
 
     <!-- Bootstrap core CSS -->
      <link href="../public/css/bootstrap.css" rel="stylesheet">
@@ -54,7 +54,7 @@
     <div class="container">
 
       <!-- Static navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top mf">
+     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -63,54 +63,83 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">unlockgh</span></a>
+           <a class="navbar-brand" href="{{URL::to('/')}}"></i>Perfect<span class="yellow">unlockgh</span></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav">
               <!-- <li class=""><a href="#">Home</a></li> -->
-              <!-- <li><a href="{{URL::to('imei-checker')}}">IMEI CHECKER</a></li>
-              <li><a href="{{URL::to('checkmend')}}">CHECKMEND</a></li> -->
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMEI CHECKER <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Imei Checker <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="{{URL::to('')}}">Network Lock Check</a></li>
-                  <li><a href="{{URL::to('order-status')}}">Blacklisted/Barred/Clean Check</a></li>
-                  <li><a href="{{URL::to('signout')}}">Free ICLOUD Status Check</a></li>
-                  <li><a href="{{URL::to('signout')}}">Sprint USA - All iPhone Eligibility Test Clean/Blacklist/Unpaid Bill</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">NETWORK LOCK CHECK</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">BLACKLISTED/BARRED/CLEAN CHECK</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">FREE ICLOUD STATUS CHECK</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">SPRINT USA - All IPHONE ELIGIBILITY TEST CLEAN/BLACKLISTED/UNPAID BILL</a></li>
                   
                   </ul>
               </li>
-               <li><a href="{{URL::to('request-unlock')}}">REQUEST UNLOCK</a></li>
+              <!-- <li><a href="{{URL::to('imei-checker')}}">IMEI CHECKER</a></li> -->
+             <!--  <li><a href="{{URL::to('checkmend')}}">CHECKMEND</a></li> -->
+               <!-- <li><a href="{{URL::to('request')}}">Request Unlock</a></li> -->
+               <li><a href="{{URL::to('store')}}">Gevey Store</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HELP <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="{{URL::to('')}}">FAQs</a></li>
+                   <li><a href="{{URL::to('')}}">FAQs</a></li>
+                   <li><a href="{{URL::to('request')}}">REQUEST UNLOCK</a></li>
                   <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
                   <li><a href="{{URL::to('unlock-help')}}">UNLOCKING GUIDE</a></li>
                   <li><a href="{{URL::to('blog')}}">BLOG</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">CONTACT US</a></li>
+                  <li><a href="#">CONATCT US</a></li>
                   </ul>
               </li>
 
-              {{Form::open(array('url'=>'search', 'method'=>'GET', 'class'=>'navbar-form navbar-left'))}}
-              <li><input type="text" class="form-controller" data-provide="typeahead"  name="keyword"  placeholder="Search for your model eg. iPhone5"></li>
+               {{Form::open(array('url'=>'search', 'method'=>'GET', 'class'=>'navbar-form navbar-left'))}}
+              <li><input type="text" class="form-control3" list="name" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
+              <datalist id="name" class="open">
+                @foreach($products as $product)
+                  <option>{{$product->product_name}}</option>
+                @endforeach
+              </datalist> 
               {{Form::close()}}
               </ul>
 
+              <!-- <li>
+                <script>
+                document.write(getDate());
+                </script>
+              </li> -->
+              </ul>
+
             <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> <sup class="badge"> 1</sup></a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> <sup class="badge"> 3</sup></a></li>
-           
+
+             <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> <sup class="badge">   3</sup></a></li>
               <!-- <li class=""><a href="./">Balance: GH₵23 <span class="sr-only">(current)</span></a></li> -->
            <li><a href="../navbar-static-top/"><img src="../public/img/Ghana.png" width="40" height="25"></a></li>
             @if(!Auth::check())
-              <li><a href="{{URL::to('login')}}"> SIGN IN | CREATE ACCOUNT </a></li>
+              <li><a href="{{URL::to('login')}}"> SIGN IN | CREATE ACCOUNT</a>
+             <!--  <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                  <form method="post" action="login" accept-charset="UTF-8">
+                    <input style="margin-bottom: 15px;" type="text" placeholder="Username" class="form-control" id="username" name="username">
+                    <input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+                    <input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+                    <label class="string optional" for="user_remember_me"> Remember me</label>
+                    <input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">
+                    <label style="text-align:center;margin-top:5px">or</label>
+                    <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+                    <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+                  </form>
+                </div>
+              </li> -->
+              </li>
             @else
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Logged in as {{ e(Auth::user()->username) }} <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="{{URL::to('')}}">DASHBOARD</a></li>
+                  <li><a href="{{URL::to('dashboard')}}">DASHBOARD</a></li>
                   <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
                   <li class="divider"></li>
                   <li><a href="{{URL::to('signout')}}">LOGOUT</a></li>
@@ -206,33 +235,47 @@
   @yield('content')
    </div> 
    <br> 
-   <div class="col-sm-6 col-md-3 cover f5">
+   <div class="col-sm-6 col-md-3 cover mf">
+
+   <form name="phones">
+
    <h4 class="blue"><b>Start unlocking here</b></h4>
-   <select class="form-control" name="manufacturer">
-   <option>Acatel</option>
-   <option>Apple</option>
-   <option>Azumi</option>
-   <option>Blackberry</option>
-   <option>Dell</option>
-   <option>Doro</option>
-   <option>Emporia</option>
-   <option>Huawei</option>
-   <option>HTC</option>
-   <option>LG</option>
-   <option>Microsoft</option>
-   <option>Motorola</option>
-   <option>Nokia</option>
-   <option>Sony</option>
-   <option>ZTE</option>
+   <select class="form-control" name="brands"  onChange="go()">
+   
+   <option value="{{URL::to('products/2')}}">Apple</option>
+   <option value="{{URL::to('products/4')}}">Blackberry</option>
+   <option value="{{URL::to('products/10')}}">Huawei</option>
+   <option value="{{URL::to('products/3')}}">HTC</option>
+   <option value="{{URL::to('products/6')}}">LG</option>
+   <option value="{{URL::to('products/2')}}">Microsoft</option>
+   <option value="{{URL::to('products/9')}}">Motorola</option>
+   <option value="{{URL::to('products/5')}}">Nokia</option>
+   <option value="{{URL::to('products/8')}}">Sony</option>
+   <option value="{{URL::to('products/1')}}">Samsung</option>
+   <option value="{{URL::to('products/7')}}">ZTE</option>
    </select>
    <p></p>
+
+   <script type="text/javascript">
+    <!--
+    function go(){
+    location=
+    document.phones.brands.
+    options[document.phones.brands.selectedIndex].value
+    }
+    //-->
+    </script>
+
    <p>
-     <button class=" btn-block btn btn-primary"> Click to continue unlocking</button>
+   <button class=" btn-block btn btn-primary"> Click to continue unlocking</button>
    </p>
    <br>
    <p>
+     
+   </form>
+   
    <h4 class="blue">BUY ALL NEW GEVEYS SIMS HERE!!</h4>
-   <img src="../public/img/RSIM_10.jpg" class="img-responsive">
+   <img src="../public/img/10+.jpg" class="img-responsive">
    </p>
    <p class="blue"><a href="{{URL::to('store')}}">Click here to gevey store and buy now !! &raquo;</a></p>
    <br>
@@ -240,9 +283,9 @@
    <p class="blck">We ensure 100% money back guarantee for unlocking failure from our network or system</p>
    <br>
    <img src="img/iphone_check.png" width="220">
-   <p><a class="blue text-center" href="">Click here to check phone status >></a></p>
+   <p><a class="blue text-center" href="">Click here to check phone status &raquo;</a></p>
     <img src="img/imeichecker.png" width="220">
-    <p><a class=" btn btn-primary" href="">Click here to check phone status >></a></p>
+    <p><a class="blue text-center" href="">Click here to check phone status &raquo;</a></p>
    <br>
    <p>
     <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="220" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
@@ -262,20 +305,19 @@
     code and it works and couldn't be happier "</p>
    <p class="yellow">Posted: 22/07/2015 @ 05:58 am </p>
    </div> -->
-   <div class="well well-sm me"><h4 class="blue text-center"><b>BLOG LATEST UPDATES</b></h4>
-   <ul class="list-group mb">
-     <li class="list-group-item mb"><a href="">new ways to unlock your android device to root your phone</li>
-     <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>
-     <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>
-     <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>
+  <div class="well well-sm ny"><h4 class="blck text-center"><b>BLOG LATEST UPDATES</b></h4>
+   <ul class="list-group">
+     <li class="list-group-item  f5"><a href=""> &raquo; New ways to unlock your android device to root your phone</li>
+     <li class="list-group-item blck"><a href=""> &raquo; How to unlock Huawei Ascend Y530</li>
+     <li class="list-group-item blck f5"><a href=""> &raquo; How to unlock Huawei Ascend Y530</li>
+     <li class="list-group-item blck"><a href=""> &raquo; How to unlock Huawei Ascend Y530</li>
    </ul>
    </div>
 </div>
 </div>  
 
 <br><br>
-<div class="well well-sm mb"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i><b> Testmonials:- what our customers say about us </b><span class="pull-right hidden-xs" data-toggle="modal" data-target="#exampleModal"> <font family="Arial"> write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></span></div></h4>
-
+<div class="well well-sm mb"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i> <b> Testmonials:- What our customers say about us </b><span class="pull-right hidden-xs"> <font family="Arial"><a class="pull-right" href="{{URL::to('reviews')}}">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></a></span></div></h4>
 
     <!-- ******************************************MODAL POPUP FOR REVIEWS OR COMMENTS********************************* -->
 
@@ -336,7 +378,7 @@
   </div>
 
   <div class="nav">
-  <div class="well well-md text-center">
+  <div class="well well-md text- mf text-center">
   <span class="blck2"><h3><i class="glyphicon glyphicon-phone-alt"></i> For mobile helplines please contact <a class="yellow" href="#">0503214360</a> OR <a class="yellow" href="#">0244072639</a> OR <a class="yellow" href="#">0501366148</a>.<br> You can also email us at <a class="yellow" href="mailto:info.iulockgh@shop.com">info.iunlockgh.com</a></h3><br>
  </span> </div>
   </div>

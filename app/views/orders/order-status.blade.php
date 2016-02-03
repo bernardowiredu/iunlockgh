@@ -3,7 +3,7 @@
 
 @section('header')
 
-<h1 class="text-center blck">CHECK ORDER STATUS</h1>
+<h1 class="text-center blck2">CHECK ORDER STATUS</h1>
 
 
 @stop
@@ -16,15 +16,8 @@
 <img src="img/folder_modified.png" class="img-responsive">
 <h4 class="well-sm"><b class="blue">SEARCH AND RECIEVE ORDER STATUS</b></h4>
 
-You can track the status of your order on real-time filling the form on the left.
+<p>Enter your imei used for your order and click on submit to search for order</p>
 
-If your order has been pending for an unusually long period of time or if you have any questions please don't hesitate to contact us.
-
-*If you have just placed your order, please do not call or email us but click HERE for turnaround times.
-
-*If your order is not found in the system, PLEASE DO NOT WORRY, as your order may have not been added to our system yet. Just contact us at contact@unlockcode4u.com and we will take care of the issue ASAP for you.
-
-<br><br>
 <div class="panel panel-inverse">
   <div class="panel-heading ny">
     <h3 class="panel-title blck"><font color="#fff">Search order<span class="pull-right"><i class="glyphicon glyphicon-search"></i></span></h3>
@@ -32,7 +25,7 @@ If your order has been pending for an unusually long period of time or if you ha
   <div class="panel-body mf">
    <h4><b>To check your order status, fill the form below now:</b></h4>
 
-	{{Form::open(array('url'=>'order-status', 'method'=>'GET'))}}
+  {{Form::open(array('url'=>'order-status', 'method'=>'GET'))}}
 
 <label class="blck">Enter a valid IMEI number<i class="text-danger"> **</i></label>
 <input type="text" class="form-control" placeholder="Enter your IMEI" name="keyword" required>
@@ -45,8 +38,6 @@ If your order has been pending for an unusually long period of time or if you ha
 {{Form::close()}}
   </div>
 </div>
-
-
 <div class="well mf ">
 @if($read > 0)
 @foreach($payments as $payment)
@@ -137,6 +128,9 @@ If your order has been pending for an unusually long period of time or if you ha
     No Order is found with such IMEI? Please enter the correct IMEI Number
     @endif
 </div>
+
+
+
 
 
 

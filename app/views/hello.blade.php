@@ -56,7 +56,7 @@
     <div class="container ">
 
       <!-- Static navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top mf">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -82,11 +82,13 @@
               </li>
               <!-- <li><a href="{{URL::to('imei-checker')}}">IMEI CHECKER</a></li> -->
              <!--  <li><a href="{{URL::to('checkmend')}}">CHECKMEND</a></li> -->
-               <li><a href="{{URL::to('request')}}">Request Unlock</a></li>
+               <!-- <li><a href="{{URL::to('request')}}">Request Unlock</a></li> -->
+               <li><a href="{{URL::to('store')}}">Gevey Store</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                    <li><a href="{{URL::to('')}}">FAQs</a></li>
+                   <li><a href="{{URL::to('order-status')}}">REQUEST UNLOCK</a></li>
                   <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
                   <li><a href="{{URL::to('unlock-help')}}">UNLOCKING GUIDE</a></li>
                   <li><a href="{{URL::to('blog')}}">BLOG</a></li>
@@ -96,7 +98,7 @@
               </li>
 
                {{Form::open(array('url'=>'search', 'method'=>'GET', 'class'=>'navbar-form navbar-left'))}}
-              <li><input type="text" class="form-control" list="name" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
+              <li><input type="text" class="form-control3" list="name" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
               <datalist id="name" class="open">
                 @foreach($products as $product)
                   <option>{{$product->product_name}}</option>
@@ -153,7 +155,7 @@
       <br>
       <div class="p"> 
           @foreach($upnav as $up)
-          <span><b class="red">{{$up->date}}</b> {{$up->message}}  &emsp;</span>
+          <span><b class="blck">{{$up->date}}</b> {{$up->message}}  &emsp;</span>
           @endforeach
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -203,7 +205,7 @@
         </div>
           <div class="col-sm-1 col-md-1 line2">
         <li>
-         <li><a class="txt" href="{{URL::to('products/8')}}"><i class="glyphicon glyphicon-phone yellow"></i> Sony</a></li>
+         <li><a class="txt" href="{{URL::to('products/8')}}"><i class="glyphicon glyphicon-phone blck"></i> Sony</a></li>
             <!-- Contact helpline on <i class="glyphicon glyphicon-earphone yellow"></i> 0244049419 -->
          </li>
         </div>
@@ -380,12 +382,17 @@
         <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br> 
         <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
         <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="490">
-         <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
+        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
+        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
         <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery" value="11-15 days">
         <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
         <input type="text" class="form-control" placeholder=" Enter your mobile number" name="order_contact"><br>
         <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
-        <p><button class="btn btn-success" type="submit">Create order</button></p>
+        @if(!Auth::check())
+           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
+          @else
+          <p><button class="btn btn-success" type="submit">Create order</button></p>
+          @endif
         {{Form::close()}}
       </div>
       </div>
@@ -424,10 +431,15 @@
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="500">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery" value="2-7 days">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
+          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
           <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
           <input type="text" class="form-control" placeholder=" Enter your mobile number" name="order_contact"><br>
           <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
+          @if(!Auth::check())
+           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
+          @else
           <p><button class="btn btn-success" type="submit">Create order</button></p>
+          @endif
           {{Form::close()}}
           </div>
           </div>
@@ -459,14 +471,19 @@
           <option>iPhone 6s</option>
         </select><br>
           <input type="text" class="form-control" placeholder="Enter your IMEI name" name="imei"><br>
-           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
-           <input type="text" class="form-control" placeholder=" Enter your mobile number"name="order_contact"><br>
+          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
+          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
+          <input type="text" class="form-control" placeholder=" Enter your mobile number"name="order_contact"><br>
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="900">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
           <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery">
           <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
+          @if(!Auth::check())
+           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
+          @else
           <p><button class="btn btn-success" type="submit">Create order</button></p>
+          @endif
           {{Form::close()}}
       </div>
       </div>
@@ -501,12 +518,17 @@
           <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br>
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="Verizon">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="700">
+          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery" value="1-7 days">
           <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
           <input type="text" class="form-control" placeholder=" Enter your mobile number" name="order_contact"><br>
           <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
-          <p><button class="btn btn-success " type="submit">Create order</button></p>
+          @if(!Auth::check())
+           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
+          @else
+          <p><button class="btn btn-success" type="submit">Create order</button></p>
+          @endif
           {{Form::close()}}
         </div>
       </div> </div>
@@ -547,14 +569,14 @@
       <div class="carousel-wrapper">
         <div class="carousel-items">
           <div class="span3 carousel-block">
-              <h2 class="nrml">iPhone 5s</h2>
-              <img id="demo" src="img/iph.png" alt="product" width="180" height="180">
+              <h3 class="nrml">iPhone 6/6+</h3>
+              <img id="demo" src="img/iphone6b.png" alt="product" width="180" height="180">
                <div class="contenthover">
                  <span class="whyt">45 Phones unlocked</span>
                 </div>
-              <p class="smll">Click here to unlock your iPhone 5s </p>
+              <p class="smll">Click here to unlock your iPhone 6 series </p>
                <center><img src="../public/img/5stars.png"></center>
-               <a href="{{URL::to('product/5')}}"><button class="btn btn-success"><i class="fa fa-unlock"></i> <b>Unlock Phone</b></button></a>
+               <a href="{{URL::to('products/1')}}"><button class="btn btn-success"><i class="fa fa-unlock"></i> <b>Unlock Phone</b></button></a>
           </div>
 
         <div class="span3 carousel-block">
@@ -569,12 +591,12 @@
         </div>
 
         <div class="span3 carousel-block">
-        <h2 class="nrml">Samsung galaxy S5</h2>
-         <img id="demo2" src="img/sa2.png" alt="product" width="170" height="180">
+        <h2 class="nrml">Galaxy S6/S6 edge</h2>
+         <img id="demo2" src="img/s63.png" alt="product" width="170" height="180">
           <div class="contenthover">
             <span class="whyt">7 Phones unlocked</span>
             </div>
-          <p class="smll">Click here to unlock your Samsung galaxy S5 </p>
+          <p class="smll">Click here to unlock your Samsung galaxy S6 </p>
            <center><img src="../public/img/5stars.png"></center>
                <a href="{{URL::to('products/2')}}"><button class="btn btn-success"><i class="fa fa-unlock"></i> <b>Unlock Phone</b></button></a>
         </div>
@@ -618,33 +640,47 @@
   </div>
    </div>  
    <div class="col-sm-6 col-md-3 cover mf">
+    <form name="phones">
+
    <h4 class="blue"><b>Start unlocking here</b></h4>
-   <select class="form-control" name="manufacturer">
-   <option>Acatel</option>
-   <option>Apple</option>
-   <option>Azumi</option>
-   <option>Blackberry</option>
-   <option>Dell</option>
-   <option>Doro</option>
-   <option>Emporia</option>
-   <option>Huawei</option>
-   <option>HTC</option>
-   <option>LG</option>
-   <option>Microsoft</option>
-   <option>Motorola</option>
-   <option>Nokia</option>
-   <option>Sony</option>
-   <option>ZTE</option>
+   <select class="form-control" name="brands"  onChange="go()">
+   
+   <option value="{{URL::to('products/2')}}">Apple</option>
+   <option value="{{URL::to('products/4')}}">Blackberry</option>
+   <option value="{{URL::to('products/10')}}">Huawei</option>
+   <option value="{{URL::to('products/3')}}">HTC</option>
+   <option value="{{URL::to('products/6')}}">LG</option>
+   <option value="{{URL::to('products/2')}}">Microsoft</option>
+   <option value="{{URL::to('products/9')}}">Motorola</option>
+   <option value="{{URL::to('products/5')}}">Nokia</option>
+   <option value="{{URL::to('products/8')}}">Sony</option>
+   <option value="{{URL::to('products/1')}}">Samsung</option>
+   <option value="{{URL::to('products/7')}}">ZTE</option>
    </select>
    <p></p>
-  
+
+   <script type="text/javascript">
+    <!--
+    function go(){
+    location=
+    document.phones.brands.
+    options[document.phones.brands.selectedIndex].value
+    }
+    //-->
+    </script>
+
    <p>
-     <button class=" btn-block btn btn-danger"> Click to continue unlocking</button>
+   <button class=" btn-block btn btn-primary"> Click to continue unlocking</button>
    </p>
    <br>
    <p>
+     
+   </form>
+   
    <h4 class="blue"><b> BUY ALL NEW GEVEYS SIMS HERE!!</b></h4>
-   <img src="../public/img/RSIM_10.jpg" class="img-responsive">
+   <div class="thumbnail">
+   <img src="../public/img/10+.jpg" class="img-responsive">
+   </div>
    </p>
    <p class="whyt"><a href="{{URL::to('store')}}">Click here to gevey store and buy now !! &raquo;</a></p>
      <!--  <label>Phone model<i class="text-danger"> **</i></label></label>
@@ -671,24 +707,24 @@
    <p><a class="blue" href="">Click here to check phone status >></a></p>
    
     <img src="img/imeichecker.png" width="220">
-   <p><a class="btn btn-primary" href="">Click to check phone status &raquo;&raquo;</a></p>
+   <p><a class="blue" href="">Click to check phone status &raquo;&raquo;</a></p>
    <br>
    <p>
     <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="220" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
    </p>
-   <div class="well well-sm me"><h4 class="blck text-center"><b>BLOG LATEST UPDATES</b></h4>
-   <ul class="list-group mg">
-     <li class="list-group-item mb"><a href="">new ways to unlock your android device to root your phone</li>
-     <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>
-     <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>
-     <li class="list-group-item mb"><a href="">How to unlock Huawei Ascend Y530</li>
+   <div class="well well-sm ny"><h4 class="blck text-center"><b>BLOG LATEST UPDATES</b></h4>
+   <ul class="list-group">
+     <li class="list-group-item  f5"><a href=""> &raquo; New ways to unlock your android device to root your phone</li>
+     <li class="list-group-item blck"><a href=""> &raquo; How to unlock Huawei Ascend Y530</li>
+     <li class="list-group-item blck f5"><a href=""> &raquo; How to unlock Huawei Ascend Y530</li>
+     <li class="list-group-item blck"><a href=""> &raquo; How to unlock Huawei Ascend Y530</li>
    </ul>
    </div>
 </div>
 </div>  
 
 <br><br>
-<div class="well well-sm mb"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i> <b> Testmonials:- What our customers say about us </b><span class="pull-right hidden-xs" data-toggle="modal" data-target="#exampleModal"> <font family="Arial">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></span></div></h4>
+<div class="well well-sm mb"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i> <b> Testmonials:- What our customers say about us </b><span class="pull-right hidden-xs"> <font family="Arial"><a class="pull-right" href="{{URL::to('reviews')}}">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></a></span></div></h4>
 
 
     <!-- ******************************************MODAL POPUP FOR REVIEWS OR COMMENTS********************************* -->
@@ -729,6 +765,38 @@
       </div>
 
 
+
+
+
+
+    {{ Form::open(array('url' => 'sigin', 'method'=>'POST')) }}
+    <div class="modal fade" id="siModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel2"><i class="glyphicon glyphicon-user"></i> SIGN IN</h4>
+          </div>
+          <div class="modal-body">
+          @include('common.notification')
+          <label class="blck">Email Address</label>
+          <input type="text" class="form-control" name="email" placeholder="enter your email"><br>
+          <label class="blck">Password</label>
+          <input type="password" class="form-control" name="password_confirmation" placeholder="enter your password">
+          </div>
+          <div class="modal-footer">
+          <button  type="submit" class="btn btn-primary">Signin</button>
+          {{Form::close()}}
+          <a href="{{URL::to('register')}}"><button type="button" class="btn btn-success">Register</button></a>
+         
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 <!-- ******************************************************************************************************************* -->
 
 
@@ -745,7 +813,7 @@
                     <p><i class="fa fa-quote-left"></i> {{$cat->comments}} </p>
                       <ins class="ab zmin sprite sprite-i-triangle block"></ins>
                     </div>
-              <div class="person-text rel">
+              <div class="person-text rel blck2">
                         <img src="../public/img/comt.png"><a title="">{{$cat->username}}</a>{{$cat->location}}
               </div>
             </div>
@@ -801,15 +869,15 @@
       <div class="inline">
         <ul class="nav">
         <div class="col-xs-6 col-md-3">
-        <li><a href=""><h4 class="yellow">About Us</h4></a></li>
-          <ul class="nav">
+        <li><a href=""><h4 class="blue"><b>About Us</b></h4></a></li>
+          <ul class="nav blck2">
             <li><i class="fa fa-home"></i> Home</li>
             <li> <i class="fa fa-user"></i> About Us</li>
           </ul>
          </div>
          <div class="col-xs-6 col-md-3">
-        <li><a href=""><h4 class="yellow">Get support</h4></a></li>
-          <ul class="nav">
+        <li><a href=""><h4 class="blue"><b>Get support</b></h4></a></li>
+          <ul class="nav blck2">
             <li>FAQ</li>
             <li>Our Blog </li>
             <li>Contact Us</li>
@@ -819,8 +887,8 @@
           </ul>
          </div>
          <div class="col-xs-6 col-md-3">
-         <li><a href=""><h4 class="yellow">Follow us</h4></a></li>
-          <ul class="nav">
+         <li><a href=""><h4 class="blue"><b>Follow us</b></h4></a></li>
+          <ul class="nav blck2">
               <!-- fa fa-facebook
               fa fa-google-plus
               fa fa-linkedin
@@ -831,7 +899,7 @@
             </ul>    
          </div>
          <div class="col-xs-6 col-md-3">
-       <li><a href=""><h4 class="yellow">Supported payment methods</h4></a></li>
+       <li><a href=""><h4 class="blue"><b>Payment methods</b></h4></a></li>
         <ul class="nav">
           <li><img class="img-responsive" src="img/money_mobi.png" width="200" height="40"></li><p></p>
           
@@ -1015,41 +1083,5 @@
 
       </script>
 
-
-
-
-    <script src="../public/js/jQuery.js"></script>
-      <script src="../public/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript">
-
-     
-    /* attach a submit handler to the form */
-    $("#com").submit(function(event) {
-
-      /* stop form from submitting neormally */
-      event.preventDefault();
-
-      /* get some values from elements on the page: */
-      var $form = $( this ),
-          url = $form.attr( 'action' );
-
-      /* Send the data using post */
-      var posting = $.post( url, { username: $('#username').val(), comments: $('#message_text').val(),
-      time: $('#time').val(), date: $('#date').val(), location: $('#location').val()
-
-      });
-
-      /* Alerts the results */
-      posting.done(function(data) {
-          alert('Thanks for your commments');
-          window.location.href="{{URL::to('/')}}";
-      });
-    });
-
-</script>
-
-
-     
-
-  </body>
+</body>
 </html>

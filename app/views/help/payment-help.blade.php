@@ -12,7 +12,7 @@
 
 @section('content')
 
-<div class="container">
+<!-- <div class="container">
 	<div class="row">
       <div class="col-md-4 col-md-offset-4">
         <div class="material-button-anim">
@@ -39,7 +39,7 @@
         </div>
       </div>
 	</div>
-</div>
+</div> -->
 <!-- <div class="well well-sm me">
 <h1 class="txt-shadow yellow"> <b>how to make payment</b></h1>
 </div> -->
