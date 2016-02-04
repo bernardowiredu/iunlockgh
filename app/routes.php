@@ -30,7 +30,7 @@ Route::post('forgotten-password', array('uses'=>'UserController@postForgottenPas
 
 });
 
-Route::get('dashboard', array('uses'=>'UserController@getDashboard'));
+
 Route::get('editprofile', array('uses'=>'UserController@getProfile'));
 Route::get('signout', array('uses'=>'UserController@getSignout'));
 
@@ -62,7 +62,7 @@ Route::get('privacy', array('uses'=>'HelpController@getPrivacy'));
 
 
 /*******************************PAYMENT CONTROLLER*************************/
-
+Route::get('dashboard', array('uses'=>'PaymentController@getHistoryDashboard'));
 Route::get('order-history', array('uses'=>'PaymentController@getHistory'));
 Route::get('payments', array('uses'=>'PaymentController@getIndex'));
 Route::get('payments', array('uses'=>'PaymentController@getIndex'));

@@ -121,11 +121,11 @@ Route::filter('role', function()
 |
 */
 
-/*App::missing(function($exception)
+App::missing(function($exception)
 {
     return Response::view('errors.404', array(), 404);
 });
-*/
+
 /*
 |--------------------------------------------------------------------------
 | App Error Handler
@@ -137,12 +137,12 @@ Route::filter('role', function()
 |
 */
 
-/*App::error(function(Exception $exception, $code)
+App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
 	 return Response::view('errors.404', array(), 500);
 });
-*/
+
 /*
 |--------------------------------------------------------------------------
 | App Shutdown Handler
@@ -154,7 +154,7 @@ Route::filter('role', function()
 |
 */
 
-/*App::down(function()
+App::down(function()
 {
 	return Response::make("Be right back!", 503);
-});*/
+});
