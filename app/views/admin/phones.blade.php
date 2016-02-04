@@ -25,7 +25,7 @@
 
 @section('header')
 
-<img src="../img/mobile_">
+<img src="../img/mobile.png">
 
 @stop
 

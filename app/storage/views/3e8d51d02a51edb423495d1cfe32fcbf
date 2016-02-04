@@ -23,7 +23,7 @@
 
 <?php $__env->startSection('header'); ?>
 
-<img src="../img/mobile_">
+<img src="../img/mobile.png">
 
 <?php $__env->stopSection(); ?>
 
