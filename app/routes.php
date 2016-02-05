@@ -29,14 +29,16 @@ Route::post('sigin', array('before'=>'csrf', 'uses'=>'UserController@postSign'))
 Route::post('forgotten-password', array('uses'=>'UserController@postForgottenPassword'));
 
 });
-
+ 
 
 Route::get('editprofile', array('uses'=>'UserController@getProfile'));
 Route::get('signout', array('uses'=>'UserController@getSignout'));
 
+Route::put('edit', array('uses'=>'UserController@putUpdateProfile'));
+Route::put('password', array('uses'=>'UserController@putUpdatePassword'));
 /*********************************CHECKMEND CONTROLLER********************/
-Route::get('checkmend', array('uses'=>'CheckmendController@getIndex'));
 
+ Route::get('checkmend', array('uses'=>'CheckmendController@getIndex'));
 /********************************PRODUCT CONTROLLER***********************/
 Route::get('product/{id}', array('uses'=>'ProductController@getProduct'));
 Route::get('search', array('uses'=>'ProductController@getProductSearch'));
