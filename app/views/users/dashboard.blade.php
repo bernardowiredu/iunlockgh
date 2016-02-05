@@ -36,48 +36,48 @@
       <div class="animatedParent" data-sequence="500">
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
               <div class="plate blu2">
-              <span><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> ORDERS</span>
-              <h4>30</h4>
+              <a class="whyt" href="{{URL::to('order-history')}}"><span><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> ORDERS</span></a>
+             <!--  <h4>30</h4> -->
               </div>
               <div class="hole blu">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck2" href="">View</a></h4>
+             <!--  <h4><a class="blck2" href="">View</a></h4> -->
               <!-- <span class="">orders</span> -->
             </div>
 
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                 <div class="plate green2">
-             <span><i class="glyphicon glyphicon-credit-card" aria-hidden="true"></i> PAYMENTS</span>
-             <h4>9</h4>
+             <a class="whyt" href="{{URL::to('payments')}}"><span><i class="glyphicon glyphicon-credit-card" aria-hidden="true"></i> ADD FUNDS</span></a>
+             <!-- <h4>9</h4> -->
               </div>
                <div class="hole green">
              <!--  <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck2" href="">View</a></h4>
+             <!--  <h4><a class="blck2" href="">View</a></h4> -->
               <!-- <span class="">payments</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                <div class="plate rou2">
-              <span><i class="glyphicon glyphicon-phone"></i> UNLOCK REQUEST</span>
-               <h4>12</h4>
+               <a  class="whyt" href="{{URL::to('unlock-request')}}"><span><i class="glyphicon glyphicon-phone"></i> UNLOCK REQUEST</span></a>
+              <!--  <h4>12</h4> -->
               </div>
                <div class="hole rou">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck2" href="">View</a></h4>
+             <!--  <h4><a class="blck2" href="">View</a></h4> -->
               <!-- <span class="">requests</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                <div class="plate voi2">
-             <span><i class="glyphicon glyphicon-comment"></i> MESSAGES</span>
-              <h4>30</h4>
+             <a class="whyt" href="{{URL::to('messages')}}"><span><i class="glyphicon glyphicon-comment"></i> MESSAGES</span></a>
+              <!-- <h4>30</h4> -->
               </div>
                <div class="hole voi">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck2" href="">View</a></h4>
-              <!-- <span class="">messages</span> -->
+              <!-- <h4><a class="blck2" href="">View</a></h4> --><!-- 
+ -->              <!-- <span class="">messages</span> -->
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
                   <td>{{$payment->price}}</td>
                   <td>{{$payment->imei}}</td>
                   <td>{{$payment->delivery_time}}</td>
-                  <td><span class="label label-success">unlocked</span></td>
+                  <td><a href="{{URL::to('order-details/'. $payment->id)}}"><span class="label label-success">unlocked</span></a></td>
                 </tr>
                </tbody>
                @endforeach
