@@ -19,7 +19,10 @@ class AdminController extends BaseController
 
 	public function getAllUsers(){
 
-		return View::make('admin.users');
+
+		$users = User::take(100)->orderBy('created_at', 'DESC')->paginate(15);
+
+		return View::make('admin.users')->with('users',$users);
 	}
 
 
