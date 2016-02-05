@@ -24,7 +24,7 @@
 
 @section('header')
 
-<img src="../public/img/home.png"><span class="">{{Auth::user()->username}} Dashboard</span> 
+<img src="../public/img/home.png"><span class="blck2">{{Auth::user()->username}} Dashboard</span> 
 
 @stop
 
@@ -36,178 +36,79 @@
       <div class="animatedParent" data-sequence="500">
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
               <div class="plate blu2">
-              <span><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> ORDERS</span>
-              <h4>30</h4>
+              <a class="whyt" href="{{URL::to('order-history')}}"><span><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> ORDERS</span></a>
+             <!--  <h4>30</h4> -->
               </div>
               <div class="hole blu">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+             <!--  <h4><a class="blck2" href="">View</a></h4> -->
               <!-- <span class="">orders</span> -->
             </div>
 
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                 <div class="plate green2">
-             <span><i class="glyphicon glyphicon-credit-card" aria-hidden="true"></i> PAYMENTS</span>
-             <h4>9</h4>
+             <a class="whyt" href="{{URL::to('payments')}}"><span><i class="glyphicon glyphicon-credit-card" aria-hidden="true"></i> ADD FUNDS</span></a>
+             <!-- <h4>9</h4> -->
               </div>
                <div class="hole green">
              <!--  <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+             <!--  <h4><a class="blck2" href="">View</a></h4> -->
               <!-- <span class="">payments</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                <div class="plate rou2">
-              <span><i class="glyphicon glyphicon-phone"></i> UNLOCK REQUEST</span>
-               <h4>12</h4>
+               <a  class="whyt" href="{{URL::to('unlock-request')}}"><span><i class="glyphicon glyphicon-phone"></i> UNLOCK REQUEST</span></a>
+              <!--  <h4>12</h4> -->
               </div>
                <div class="hole rou">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
+             <!--  <h4><a class="blck2" href="">View</a></h4> -->
               <!-- <span class="">requests</span> -->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder animated bounceInup" data-id="1">
                <div class="plate voi2">
-             <span><i class="glyphicon glyphicon-comment"></i> MESSAGES</span>
-              <h4>30</h4>
+             <a class="whyt" href="{{URL::to('messages')}}"><span><i class="glyphicon glyphicon-comment"></i> MESSAGES</span></a>
+              <!-- <h4>30</h4> -->
               </div>
                <div class="hole voi">
               <!-- <i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i> -->
               </div>
-              <h4><a class="blck" href="">View</a></h4>
-              <!-- <span class="">messages</span> -->
+              <!-- <h4><a class="blck2" href="">View</a></h4> --><!-- 
+ -->              <!-- <span class="">messages</span> -->
             </div>
           </div>
         </div>
 
-          <h2 class="sub-header">Recent unlocking orders</h2>
+          <h2 class="sub-header blck2">Unlocking orders</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th><span class="blck2">Phone</span></th>
+                  <th><span class="blck2">Network</span></th>
+                  <th><span class="blck2">Price</span></th>
+                  <th><span class="blck2">Order-imei</span></th>
+                  <th><span class="blck2">Delivery</span></th>
+                  <th><span class="blck2">Status</span></th>
+                 
                 </tr>
               </thead>
+
+              @foreach($payment as $payment)
               <tbody>
                 <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
+                  <td>{{$payment->product_model}}</td>
+                  <td>{{$payment->network_name}}</td>
+                  <td>{{$payment->price}}</td>
+                  <td>{{$payment->imei}}</td>
+                  <td>{{$payment->delivery_time}}</td>
+                  <td><a href="{{URL::to('order-details/'. $payment->id)}}"><span class="label label-success">unlocked</span></a></td>
                 </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
+               </tbody>
+               @endforeach
             </table>
           </div>
 
