@@ -45,7 +45,8 @@ class UnlockController extends BaseController {
 			$url = "http://sms.nasaramobile.com/api?api_key=5526d8e9e0ebe5526d8e9e0f32&&sender_id=PerfectLTD&&phone=0560094454&&message=".urlencode($message)."";
 
 			 $response = file_get_contents($url);
-		     $username = Auth::user()->username;
+
+		    $username = Auth::user()->username;
 
 			$unlock = new Unlock;
 			$unlock->user_id = Auth::user()->id;
