@@ -43,23 +43,26 @@
                   <th>Email</th>
                   <th>Telephone</th>
                   <th>Balance</th>
+                  <th>Password</th>
                   <th>Created At</th>
                   <th><i class="glyphicon glyphicon-cog jbt"></i> Action</th>
                 </tr>
               </thead>
               
+              @foreach($users as $user)
               <tbody>
                 <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>dolor</td>
-				          <td>dolor</td>
+                  <td>{{$user->id}}</td>
+                  <td>{{e($user->username}}</td>
+                  <td>{{$user->email}}</td>
+                  <td>{{$user->telephone}}</td>
+                  <td>{{$user->balance}}</td>
+                  <td>{{$user->password_confirmation}}</td>
+				          <td>credit</td>
                   <td><button class="btn btn-small btn-default" onclick=" return ConfirmDelete('yes', 'no')"><i class=" glyphicon glyphicon-trash"></i></button></td>
                 </tr>
                 </tbody>
-
+                @endforeach
               <tfoot>
               	
               </tfoot>
