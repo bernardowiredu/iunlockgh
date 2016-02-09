@@ -55,7 +55,7 @@
 
 <div class="col-sm-3 col-md-5">
 <?php foreach($payments as $payment): ?>
-<h4 class=" well well-sm blck"><b>Your order IMEI <?php echo $payment->imei; ?> </b></h4>
+<h4 class=" well well-sm blck mf"><b>Your order IMEI <?php echo $payment->imei; ?> </b></h4>
 <p>Phone name: <b class="red"><?php echo $payment->product_model; ?></b> <a href="<?php echo URL::to('order-details/' .$payment->id); ?>"> View full order here</a>  </p>
 <p>Network locked to: <b><?php echo $payment->network_name; ?></b></p>
 <p>Delivery Time: <b><?php echo $payment->delivery_time; ?></b></p>

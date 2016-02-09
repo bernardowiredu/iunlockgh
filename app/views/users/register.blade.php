@@ -9,7 +9,7 @@
 <div class="col-sm-offset-1 col-md-5 push-2x hidden-xs">
 <img src="img/i-banner.png" class="img-responsive" width="500" height="400">
 <div class="animatedParent" data-sequence="500">
-<h3 class="animated bounceIn txt-shadow" data-id="1">You are few seconds away from unlocking your device!</h3>
+<h3 class="animated lightSpeedInLeft go txt-shadow" data-id="1">Seconds away from unlocking your device!</h3>
 <h4>Create account to start unlocking devices </h4>
 
 <ul class="nav big">

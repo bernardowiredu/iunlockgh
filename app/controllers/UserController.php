@@ -23,8 +23,6 @@ class UserController extends BaseController {
 	}
 
 
-
-
 	public function getRegister(){
 
 		return View::make('users.register');
@@ -177,5 +175,95 @@ class UserController extends BaseController {
             }
 
         }
+
+
+
+        public function putUpdateProfile(){
+
+        $posted = Input::all();
+
+        $rules = array(
+          'username' => 'Required|Alpha_dash|min:4|max:80',
+          'email'=> 'Required|email',
+        );
+
+        $user_id = Auth::user()->id;
+
+        $user = User::find($user_id);
+
+        $user->email = $posted['email'];
+        $user->username = $posted['username'];
+        $user->telephone = $posted['telephone'];
+
+        $validator = Validator::make($posted, $rules);
+
+        if($validator->passes()){
+
+            $user->save();
+
+        return Redirect::back()
+            ->with('user', $user)
+            ->with('success', 'Profile Updated Successfully');
+
+        }
+        else{
+            return Redirect::back()
+            ->with('user', $user)
+            ->with('error', 'Sorry, there was a problem saving your settings. Please try again.')
+            ->withErrors($validator)->withInput();
+        }
+
+    }
+
+
+
+
+     public function putUpdatePassword(){
+
+       $posted = Input::get();
+
+
+       $rules = array(
+
+        'password_confirmation'=>'required',
+        'password'=>'required|min:4|max:18|same:password_confirmation'
+
+         );
+       $old_password = $posted['old_password'];
+
+
+       $validator = Validator::make($posted, $rules);
+
+        if($validator->passes()){
+
+
+           $user_id = Auth::user()->id;
+
+            $user = User::find($user_id); 
+
+
+            if($old_password != Auth::user()->password_confirmation){
+
+                return Redirect::back()->with('error','Old password entered is incorrect');
+            }
+            
+            $user->password = Hash::make($posted['password']);
+            $user->password_confirmation = $posted['password'];
+          
+
+            $user->save();
+
+            return Redirect::back()
+                ->with('user', $user)
+            ->with('success', 'Password Updated <b>Successfully</b>');
+
+        }else{
+            return Redirect::back()
+            ->with('error', 'Password Update failed ')
+            ->withErrors($validator);
+        }
+   }
+
+
 
 }

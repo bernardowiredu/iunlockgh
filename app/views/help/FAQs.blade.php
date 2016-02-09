@@ -25,7 +25,7 @@
 
 @section('header')
 
-<i class="glyphicon glyphicon-phone yellow"></i> FAQs
+<img src="../public/img/pay.png" width="100" height="100"> FAQs
 
 
 @stop
@@ -36,7 +36,7 @@
 @section('content')
 
 <br>
-<img class="img-responsive"src="img/main-product.png">
+<img class="img-responsive"src="img/homepage-image-bootloader.png" width="300" height="300">
 <h4 class="yellow">Phone unlocking instructions</h4>
 <p>The various are the unlocking steps of various devices. Different unlocking process will be added from time to time</p>
 <br>

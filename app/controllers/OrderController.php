@@ -100,7 +100,10 @@ class OrderController extends BaseController {
 
 		$validator = Validator::make($posted, $rules);
 
-		if(Auth::check()) {}
+		if(Auth::check()) {
+
+			
+		}
 
 			if($validator->passes()) {
 

@@ -25,17 +25,20 @@ Route::get('register', array('uses'=>'UserController@getRegister'));
 Route::get('forgotten-password', array('uses'=>'UserController@getPassword'));
 Route::post('user', array('before'=>'csrf', 'uses'=>'UserController@postRegister'));
 Route::post('login', array('before'=>'csrf', 'uses'=>'UserController@postSignin'));
+Route::post('sigin', array('before'=>'csrf', 'uses'=>'UserController@postSign'));
 Route::post('forgotten-password', array('uses'=>'UserController@postForgottenPassword'));
 
 });
+ 
 
-Route::get('dashboard', array('uses'=>'UserController@getDashboard'));
 Route::get('editprofile', array('uses'=>'UserController@getProfile'));
 Route::get('signout', array('uses'=>'UserController@getSignout'));
 
+Route::put('edit', array('uses'=>'UserController@putUpdateProfile'));
+Route::put('password', array('uses'=>'UserController@putUpdatePassword'));
 /*********************************CHECKMEND CONTROLLER********************/
-Route::get('checkmend', array('uses'=>'CheckmendController@getIndex'));
 
+ Route::get('checkmend', array('uses'=>'CheckmendController@getIndex'));
 /********************************PRODUCT CONTROLLER***********************/
 Route::get('product/{id}', array('uses'=>'ProductController@getProduct'));
 Route::get('search', array('uses'=>'ProductController@getProductSearch'));
@@ -61,7 +64,7 @@ Route::get('privacy', array('uses'=>'HelpController@getPrivacy'));
 
 
 /*******************************PAYMENT CONTROLLER*************************/
-
+Route::get('dashboard', array('uses'=>'PaymentController@getHistoryDashboard'));
 Route::get('order-history', array('uses'=>'PaymentController@getHistory'));
 Route::get('payments', array('uses'=>'PaymentController@getIndex'));
 Route::get('payments', array('uses'=>'PaymentController@getIndex'));
@@ -98,6 +101,7 @@ Route::get('store/purchase', array('uses'=>'StoreController@getStore'));
 
 
 /******************************VIEW SHARE*************************************/
+Route::get('reviews', array('uses'=>'CommentController@getComments'));
 View::share('catnav', Comment::take(4)->orderBy('created_at','DESC')->get());
 View::share('upnav', Update::take(2)->orderBy('created_at','DESC')->get());
 View::share('products', Product::all());

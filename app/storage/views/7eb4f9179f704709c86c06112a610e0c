@@ -56,7 +56,7 @@
             <hr>
            <p><i class="glyphicon glyphicon-dashboard"></i>: <b>2015-09-98</b> <span class="navy2">|</span> <i class="icon-share-alt"></i><b> customer service</b> </p>
             <div id="collapse1" class="panel-collapse collapse"> 
-            <div class="panel-body span4">
+            <div class="panel-body">
                 <?php echo Form::open(array('url'=>'contacts', 'method'=>'POST')); ?>
 
                 <input type="hidden" class="input-xlarge" name="title" value="Reply to message"> 
@@ -73,39 +73,10 @@
             <td>
             <p><a href=""><button class="btn btn-small btn-default" onclick=" return ConfirmDelete('yes', 'no')"><i class="glyphicon glyphicon-trash"></i></button></a></p>
             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-            <button class="btn btn-small  btn-default"><i class="glyphicon glyphicon-share-alt"></i></button></a>
             </td>
             </tr>
      </tbody>
-     <tbody>
-        <tr>
-            <td class="">
-            This service is also extremely helpful if you intend to use our IMEI based iPhone factory unlocking service but before ordering you would want to make sure that your phone is locked to a carrier. After buying our service, we’ll send you detailed info about your device via Email. Here’s an example. 
-            <hr>
-           <p><i class="glyphicon glyphicon-dashboard"></i>: <b>2015-09-98</b> <span class="navy2">|</span> <i class="icon-share-alt"></i><b> customer service</b> </p>
-            <div id="collapse1" class="panel-collapse collapse"> 
-            <div class="panel-body span4">
-                <?php echo Form::open(array('url'=>'contacts', 'method'=>'POST')); ?>
-
-                <input type="hidden" class="input-xlarge" name="title" value="Reply to message"> 
-                <input type="hidden" class="input-xlarge" name="email" value="">
-                <input type="hidden" class="input-xlarge" name="help" value="reply">
-                <textarea cols="300" name="message" rows="3"></textarea>
-                <button type="submit"class="btn btn-default"> Reply</button>
-                <?php echo Form::close(); ?>
-
-            
-            </div>
-            </div>
-            </td>
-            <td>
-            <p><a href=""><button class="btn btn-small  btn-default" onclick=" return ConfirmDelete('yes', 'no')"><i class=" glyphicon glyphicon-trash"></i></button></a></p>
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-            <button class="btn btn-small  btn-default"><i class="glyphicon glyphicon-share-alt"></i></button></a>
-            </td>
-            </tr>
-     </tbody>
-    
+     
      </table>
 
       <div class="pagination pagination-right">

@@ -17,9 +17,17 @@ public function postComments(){
 
 	$comment->save();
 
+	return Redirect::back()->with('success', 'Thanks for your comments!!');
 }
 
 
+	
+	public function getComments() {
+
+		$reviews = Comment::take(100)->orderBy('created_at','DESC')->paginate(6);
+
+        return View::make('users.reviews')->with('reviews', $reviews);
+    }
 
 
 

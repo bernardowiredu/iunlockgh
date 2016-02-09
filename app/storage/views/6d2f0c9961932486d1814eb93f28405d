@@ -19,7 +19,7 @@
 <?php foreach($orders as $order): ?>
 <img src="<?php echo $order->image; ?>" alt="" class="img-responsive hidden-xs curvy"  width="140" height="110">
 <br>
- <div class="alert alert-success alert-dismissible" role="alert">
+ <div class="notice notice-success" role="alert">
  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 <strong><?php echo $order->product_name; ?> <i class="glyphicon glyphicon-ok-sign"></i></strong> 
 </div>
@@ -27,7 +27,7 @@
 </div>
 <div class="col-xs-10 col-md-9">
 
-<h4 class="yellow cover cnta ny"><img src="../public/img/folder_modified.png"><b>CONFIRM YOUR ORDER DETAILS</b></h4>
+<h4 class="blck cover cnta f5"><img src="../public/img/folder_modified.png"><b>CONFIRM YOUR ORDER DETAILS</b></h4>
 
 <div class="panel panel-inverse">
   <!-- <div class="panel-heading">
@@ -37,29 +37,74 @@
   <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
   <div class="panel-body  f5 text-center blck">
+
+  <table class="table table-bordered mf">
+  <?php foreach($orders as $order): ?>
+      <tbody>
+        <tr>
+          <td>
+           Network Locked
+          </td>
+          <td>
+           <b><?php echo $order->network_name; ?></b>
+            </td>
+        </tr>
+        <tr>
+          <td>
+           Unlocking Price
+          </td>
+          <td>
+            <b>GH₵ <?php echo $order->price; ?></b>
+            </td>
+        </tr>
+        <tr>
+          <td>
+           Phone IMEI
+          </td>
+          <td>
+            <b><?php echo $order->imei; ?></b>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            Delivery Time
+          </td>
+          <td>
+             <b><?php echo $order->delivery; ?></b>
+            </td>
+        </tr>
+         <tr>
+          <td>
+            Order Contact
+          </td>
+
+          <td>
+          <span class="blue"><i class="glyphicon glyphicon-phone"></i><b> <?php echo $order->order_contact; ?></b></span>
+            </td>
+        </tr>
+        <tr>
+        <div class="inline">
+        <td>
+       </td>
+		
+		<td>
+			 <a href="<?php echo URL::to('delete/' .$order->id); ?>"><button class="btn btn-danger"> &laquo; CANCEL </button></a>
+		
+			<a href="<?php echo URL::to('make-payment/' .$order->id); ?>"><button class="btn btn-success ny"> CONFIRM AND PAY &raquo;</button>
+		</a>
+		<br><br>
+		</div>
+		</td>
+		</tr>
+    </tbody>
+    <?php endforeach; ?>
+    </table>
    
 
-<?php foreach($orders as $order): ?>
+
 <h4>
-<p>Network Locked To: <b><?php echo $order->network_name; ?></b></p><br>
-<p>Price: <b>GH₵ <?php echo $order->price; ?></b></p><br>
-<p>Unlocking Time: <b class="blue"><?php echo $order->delivery; ?></b></p><br>
-<p>Phone Model: <span class="red"><b><?php echo $order->product_name; ?></b></span></p><br>
-<!-- <p>Network Locked: <?php echo $order->network_name; ?></p> -->
-<p>IMEI Number: <b><?php echo $order->imei; ?></b></p><br>
-<!-- p>Price:<span class="yellow"><b> GH₵ <?php echo $order->price; ?></b></span> </p> -->
-<p>Delivery Method: <span class="blue"><i class="glyphicon glyphicon-phone"></i><b> <?php echo $order->order_contact; ?></b></span></p><br>
 
-</h4>
 
-<p></p>
-<div class="inline">
-<a href="<?php echo URL::to('delete/' .$order->id); ?>"><button class="btn btn-danger"> &laquo; CANCEL ORDER </button></a>
-<a href="<?php echo URL::to('make-payment/' .$order->id); ?>"><button class="btn btn-success ny"> CONFIRM AND PAY &raquo;</button>
-</a>
-<br><br>
-</div>
-<?php endforeach; ?>
 
   </div>
 </div>

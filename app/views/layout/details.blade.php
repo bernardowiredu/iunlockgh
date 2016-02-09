@@ -46,7 +46,7 @@
           <!-- <input type="text" class="form-controller" placeholder="Search for order by entering your IMEI eg.895876758746565"><span><button class="btn btn-info">search</button></span>
           <br> -->
 
-    <div class="well mg ">
+    <div class="well mf ">
       <table class="table table-bordered mf">
       <tbody>
         <tr>

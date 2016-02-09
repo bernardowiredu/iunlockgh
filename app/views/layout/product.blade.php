@@ -65,7 +65,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">unlockgh</span></a>
+            <a class="navbar-brand" href="{{URL::to('/')}}"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">unlockgh</span></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav">
@@ -74,28 +74,28 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Imei Checker <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="{{URL::to('')}}">Network Lock Check</a></li>
-                  <li><a href="{{URL::to('order-status')}}">Blacklisted/Barred/Clean Check</a></li>
-                  <li><a href="{{URL::to('signout')}}">Free ICLOUD Status Check</a></li>
-                  <li><a href="{{URL::to('signout')}}">Sprint USA - All iPhone Eligibility Test Clean/Blacklist/Unpaid Bill</a></li>
-                  
+                   <li><a href="{{URL::to('imei-checker')}}">NETWORK LOCK CHECK</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">BLACKLISTED/BARRED/CLEAN CHECK</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">FREE ICLOUD STATUS CHECK</a></li>
+                  <li><a href="{{URL::to('imei-checker')}}">SPRINT USA - All IPHONE ELIGIBILITY TEST CLEAN/BLACKLISTED/UNPAID BILL</a></li>
                   </ul>
               </li>
-               <li><a href="{{URL::to('request-unlock')}}">Request Unlock</a></li>
+               <li><a href="{{URL::to('store')}}">Gevey Store</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="{{URL::to('')}}">FAQs</a></li>
-                  <li><a href="{{URL::to('order-status')}}">Check Order Status</a></li>
-                  <li><a href="{{URL::to('unlock-help')}}">Unlocking Guide</a></li>
-                  <li><a href="{{URL::to('blog')}}">Blog</a></li>
+                   <li><a href="{{URL::to('request')}}">REQUEST UNLOCK</a></li>
+                  <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
+                  <li><a href="{{URL::to('unlock-help')}}">UNLOCKING GUIDE</a></li>
+                  <li><a href="{{URL::to('blog')}}">BLOG</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">CONATCT US</a></li>
                   </ul>
               </li>
 
               {{Form::open(array('url'=>'search', 'method'=>'GET', 'class'=>'navbar-form navbar-left'))}}
-              <li><input type="text" class="form-control" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
+              <li><input type="text" class="form-control3" data-provide="typeahead"  name="keyword"  placeholder="Search model eg. iPhone5"></li>
               {{Form::close()}}
               </ul>
 
@@ -108,7 +108,7 @@
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Logged in as {{ e(Auth::user()->username) }} <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="{{URL::to('')}}">DASHBOARD</a></li>
+                  <li><a href="{{URL::to('dashboard')}}">DASHBOARD</a></li>
                   <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
                   <li class="divider"></li>
                   <li><a href="{{URL::to('signout')}}">LOGOUT</a></li>
@@ -211,32 +211,45 @@
    </div> 
    <br> 
    <div class="col-sm-6 col-md-3 cover mf">
+    <form name="phones">
+
    <h4 class="blue"><b>Start unlocking here</b></h4>
-   <select class="form-control" name="manufacturer">
-   <option>Acatel</option>
-   <option>Apple</option>
-   <option>Azumi</option>
-   <option>Blackberry</option>
-   <option>Dell</option>
-   <option>Doro</option>
-   <option>Emporia</option>
-   <option>Huawei</option>
-   <option>HTC</option>
-   <option>LG</option>
-   <option>Microsoft</option>
-   <option>Motorola</option>
-   <option>Nokia</option>
-   <option>Sony</option>
-   <option>ZTE</option>
+   <select class="form-control" name="brands"  onChange="go()">
+   
+   <option value="{{URL::to('products/2')}}">Apple</option>
+   <option value="{{URL::to('products/4')}}">Blackberry</option>
+   <option value="{{URL::to('products/10')}}">Huawei</option>
+   <option value="{{URL::to('products/3')}}">HTC</option>
+   <option value="{{URL::to('products/6')}}">LG</option>
+   <option value="{{URL::to('products/2')}}">Microsoft</option>
+   <option value="{{URL::to('products/9')}}">Motorola</option>
+   <option value="{{URL::to('products/5')}}">Nokia</option>
+   <option value="{{URL::to('products/8')}}">Sony</option>
+   <option value="{{URL::to('products/1')}}">Samsung</option>
+   <option value="{{URL::to('products/7')}}">ZTE</option>
    </select>
    <p></p>
+
+   <script type="text/javascript">
+    <!--
+    function go(){
+    location=
+    document.phones.brands.
+    options[document.phones.brands.selectedIndex].value
+    }
+    //-->
+    </script>
+
    <p>
-     <button class=" btn-block btn btn-danger"> Click to continue unlocking</button>
+   <button class=" btn-block btn btn-primary"> Click to continue unlocking</button>
    </p>
    <br>
    <p>
+     
+   </form>
+   
    <h4 class="blue">BUY ALL GEVEYS SIMS HERE!!!!</h4>
-   <img src="../img/RSIM_10.jpg" class="img-responsive">
+   <img src="../img/10+.jpg" class="img-responsive">
    </p>
    <p class="blue"><a href="{{URL::to('store')}}">Click here to gevey store and buy now !! &raquo;</a></p>
    <br>
@@ -287,8 +300,7 @@
 </div>  
 
 <br><br>
-<div class="well well-sm"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i> <b>Testmonials:- what our customers say about us</b> <span class="pull-right hidden-xs" data-toggle="modal" data-target="#exampleModal"> <font family="Arial">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></span></div></h4>
-
+<div class="well well-sm mb"><h4 class="blue"><i class="glyphicon glyphicon-comment"></i> <b> Testmonials:- What our customers say about us </b><span class="pull-right hidden-xs"> <font family="Arial"><a class="pull-right" href="{{URL::to('reviews')}}">write a testimonal</font> <i class="glyphicon glyphicon-pencil mouse"></i></a></span></div></h4>
 
     <!-- ******************************************MODAL POPUP FOR REVIEWS OR COMMENTS********************************* -->
 
@@ -368,7 +380,7 @@
 
 
   <div class="nav">
-  <div class="well well-md text-center">
+  <div class="well well-md text-center mf">
  <span class="blck2"><h3><i class="glyphicon glyphicon-phone-alt"></i> For mobile helplines please contact <a class="yellow" href="#">0503214360</a> OR <a class="yellow" href="#">0244072639</a> OR <a class="yellow" href="#">0501366148</a>.<br> You can also email us at <a class="yellow" href="mailto:info.iulockgh@shop.com">info.iunlockgh.com</a></h3><br>
  </span></div>
   </div>

@@ -13,12 +13,15 @@
    -->
 </div>
 
+
+
+
 <div class="col-sm-6 col-md-7 line2 push mf">
 
 
 {{ Form::open(array('url' => 'forgotten-password', 'method'=>'POST')) }}
 <div class="animatedParent" data-sequence="100">
-<h1 class="blue" data-id='1'>Forgot your password?</h1>
+<h1 class="blue bounceIn" data-id='1'>Forgot your password?</h1>
 @include('common.notification')
 <p>Not to worry. Just enter your email address below and we'll send you an instruction email for recovery.</p>
 </div>

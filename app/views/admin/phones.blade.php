@@ -24,8 +24,7 @@
 
 
 @section('header')
-
-<img src="../img/mobile_">
+<i class=" glyphicon glyphicon-phone blue"></i>
 
 @stop
 

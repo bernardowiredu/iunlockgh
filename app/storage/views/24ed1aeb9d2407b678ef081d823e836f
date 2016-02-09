@@ -23,7 +23,7 @@
 
 <?php $__env->startSection('header'); ?>
 
-<img src="../public/img/mobile_phone.png">Unlock request
+<img src="../public/img/mobile_phone.png"><h>Unlock Request</h1>
 
 <?php $__env->stopSection(); ?>
 
@@ -33,6 +33,8 @@
 <p></p>
 
 <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div class="col-sm-12 mf">
 
 <?php echo Form::open(array('url'=>'request', 'method'=>'POST')); ?>
 
@@ -81,6 +83,8 @@
 
 <?php echo Form::close(); ?>
 
+
+</div> 
 
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout.dashboard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

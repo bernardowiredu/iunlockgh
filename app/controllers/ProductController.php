@@ -27,13 +27,13 @@ class ProductController extends BaseController {
 		$networks = Network::where('category_id','=','1')->get();
 		
 		}
-		elseif($id <= 12) {
+		elseif($id <= 34) {
 		$countrys = Country::where('category_id','=','2')->get();
 		$networks = Network::where('category_id','=','2')->get();		
 		}		
-		elseif($id <= 15) {
-		$countrys = Country::where('category_id','=','3')->get();;
-		$networks = Network::where('category_id','=','3')->get();		
+		elseif($id <= 25) {
+		$countrys = Country::where('category_id','=','5')->get();;
+		$networks = Network::where('category_id','=','5')->get();		
 		}
 		return View::make('products.product')->with('phones', $phones)->with('networks', $networks)->with('countrys', $countrys);
 	}

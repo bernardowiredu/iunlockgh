@@ -53,7 +53,11 @@
               <tbody>
                 <tr>
                   <td>{{$user->id}}</td>
+<<<<<<< HEAD
                   <td>{{e($user->username}}</td>
+=======
+                  <td>{{e($user->username)}}</td>
+>>>>>>> master
                   <td>{{$user->email}}</td>
                   <td>{{$user->telephone}}</td>
                   <td>{{$user->balance}}</td>

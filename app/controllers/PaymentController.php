@@ -39,6 +39,13 @@ class PaymentController extends BaseController {
 		return View::make('orders.order-history')->with('payment',$payment);
 	}
 
+	public function getHistoryDashboard(){
+
+		$payment = Payment::where('user_id','=',Auth::user()->id)->get();
+
+		return View::make('users.dashboard')->with('payment',$payment);
+	}
+
 	public function getPaymentDetails($id){
 
 		$payment = Payment::find($id);

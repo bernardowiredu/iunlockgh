@@ -41,23 +41,26 @@
                   <th>Email</th>
                   <th>Telephone</th>
                   <th>Balance</th>
+                  <th>Password</th>
                   <th>Created At</th>
                   <th><i class="glyphicon glyphicon-cog jbt"></i> Action</th>
                 </tr>
               </thead>
               
+              <?php foreach($users as $user): ?>
               <tbody>
                 <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>dolor</td>
-				          <td>dolor</td>
+                  <td><?php echo $user->id; ?></td>
+                  <td><?php echo e($user->username); ?></td>
+                  <td><?php echo $user->email; ?></td>
+                  <td><?php echo $user->telephone; ?></td>
+                  <td><?php echo $user->balance; ?></td>
+                  <td><?php echo $user->password_confirmation; ?></td>
+				          <td>credit</td>
                   <td><button class="btn btn-small btn-default" onclick=" return ConfirmDelete('yes', 'no')"><i class=" glyphicon glyphicon-trash"></i></button></td>
                 </tr>
                 </tbody>
-
+                <?php endforeach; ?>
               <tfoot>
               	
               </tfoot>

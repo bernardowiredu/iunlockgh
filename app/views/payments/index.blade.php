@@ -9,7 +9,7 @@
           <br>
             <li><a href="{{URL::to('dashboard')}}"><i class="glyphicon glyphicon-dashboard blue"></i> Dashboard <span class="sr-only">(current)</span></a></li>
             <li><a href="{{URL::to('editprofile')}}"><i class="glyphicon glyphicon-user blue"></i> Edit profile</a></li>
-            <li><a href="{{URL::to('messages')}}"><i class="glyphicon glyphicon-commentblue"></i> Messages <sup><span class="badge"> 3</span></sup></a></li>
+            <li><a href="{{URL::to('messages')}}"><i class="glyphicon glyphicon-comment blue"></i> Messages <sup><span class="badge"> 3</span></sup></a></li>
             <li><a href="{{URL::to('order-history')}}"><i class="glyphicon glyphicon-folder-open blue"></i> Order history</a></li>
             <li class="active"><a href="{{URL::to('payments')}}"><i class="glyphicon glyphicon-credit-card blue"></i> Add funds</a></li>
             <li><a href="{{URL::to('unlock-request')}}"><i class="glyphicon glyphicon-phone blue"></i> Unlock request</a></li>
@@ -27,7 +27,7 @@
 
 @section('header')
 
-<img src="../public/img/add_to_database.png"></i><span class="">Add funds to your account
+<img src="../public/img/add_to_database.png"></i><span class="">Add funds
 </span> 
 @stop
 
@@ -40,14 +40,15 @@
 <h4 class="">To Add funds to your accounts Enter code</h4>
 
 <label>Enter deposit code<i class="text-danger"> **</i></label>
-<input type="text" class="form-control" placeholder="eg. 326578890" required>
+
+<input type="text" class="form-control" disabled="disabled" placeholder="eg. 326578890" required>
 <p></p>
-<button class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> Add fund</button>
+<button class="btn btn-danger"><i class="glyphicon glyphicon-thumbs-up"></i> Not available</button>
 </div>
 <p></p>
 
 <div class="well well-sm me">
-<h4 class="yellow"><!-- <i class=" glyphicon glyphicon-credit-card"></i> --> HOW TO ADD MONEY INTO YOUR ACCOUNT</h4>
+<h4 class="blue"> HOW TO ADD MONEY INTO YOUR ACCOUNT</h4>
 </div>
 
 <div class="well mh">

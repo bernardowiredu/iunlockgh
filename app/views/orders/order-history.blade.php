@@ -24,8 +24,7 @@
 
 @section('header')
 
-<img src="../public/img/folder_modified.png"></i> Order history
-
+<img src="../public/img/folder_modified.png"></i> <span class="blck2">Order history</span>
 @stop
 
 
