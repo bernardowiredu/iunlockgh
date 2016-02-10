@@ -1,32 +1,29 @@
-@extends('layout.products')
-
-
-@section('header')
+<?php $__env->startSection('header'); ?>
 
 <h1 class="text-center blck2">CONFIRM YOUR ORDER</h1>
 
-@stop
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <br>
 <div class="nav">
-  <a class="blck2" href="{{URL::to('confirm-order')}}"><div class="col-xs-5 col-md-4 line-solid "><span class="badge"> 1</span > FILL TO UNLOCK PHONE</div></a>
-   <a class="ff" href="{{URL::to('confirm-order')}}"><div class="col-xs-5 col-md-4 line-solid activated"><span class="badge"> 2</span> CONFIRM ORDER</div></a>
-   <a class="blck2" href="{{URL::to('confirm-order')}}"><div class="col-xs-5 col-md-4 line-solid"><span class="badge"> 3</span> PAY FOR ORDER</div></a>
+  <a class="blck2" href="<?php echo URL::to('confirm-order'); ?>"><div class="col-xs-5 col-md-4 line-solid "><span class="badge"> 1</span > FILL TO UNLOCK PHONE</div></a>
+   <a class="ff" href="<?php echo URL::to('confirm-order'); ?>"><div class="col-xs-5 col-md-4 line-solid activated"><span class="badge"> 2</span> CONFIRM ORDER</div></a>
+   <a class="blck2" href="<?php echo URL::to('confirm-order'); ?>"><div class="col-xs-5 col-md-4 line-solid"><span class="badge"> 3</span> PAY FOR ORDER</div></a>
 </div>
 
 <br>
 <div class="nav">
 <div class="col-xs-4 col-md-3 ">
-@foreach($orders as $order)
-<img src="{{$order->image}}" alt="" class="img-responsive hidden-xs curvy"  width="140" height="110">
+<?php foreach($orders as $order): ?>
+<img src="<?php echo $order->image; ?>" alt="" class="img-responsive hidden-xs curvy"  width="140" height="110">
 <br>
  <div class="notice notice-success" role="alert">
  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-<strong>{{$order->product_name}} <i class="glyphicon glyphicon-ok-sign"></i></strong> 
+<strong><?php echo $order->product_name; ?> <i class="glyphicon glyphicon-ok-sign"></i></strong> 
 </div>
-@endforeach
+<?php endforeach; ?>
 </div>
 <div class="col-xs-10 col-md-9">
 
@@ -37,19 +34,19 @@
     <h3 class="panel-title blck">Panel title</h3>
   </div> -->
 
-  @include('common.notification')
+  <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
   <div class="panel-body  f5 text-center blck">
 
   <table class="table table-bordered mf">
-  @foreach($orders as $order)
+  <?php foreach($orders as $order): ?>
       <tbody>
         <tr>
           <td>
            Network Locked
           </td>
           <td>
-           <b>{{$order->network_name}}</b>
+           <b><?php echo $order->network_name; ?></b>
             </td>
         </tr>
         <tr>
@@ -57,7 +54,7 @@
            Unlocking Price
           </td>
           <td>
-            <b>GH₵ {{$order->price}}</b>
+            <b>GH₵ <?php echo $order->price; ?></b>
             </td>
         </tr>
         <tr>
@@ -65,7 +62,7 @@
            Phone IMEI
           </td>
           <td>
-            <b>{{$order->imei}}</b>
+            <b><?php echo $order->imei; ?></b>
             </td>
         </tr>
         <tr>
@@ -73,7 +70,7 @@
             Delivery Time
           </td>
           <td>
-             <b>{{$order->delivery}}</b>
+             <b><?php echo $order->delivery; ?></b>
             </td>
         </tr>
          <tr>
@@ -82,7 +79,7 @@
           </td>
 
           <td>
-          <span class="blue"><i class="glyphicon glyphicon-phone"></i><b> {{$order->order_contact}} <i class="glyphicon glyphicon-edit"></i></b></span>
+          <span class="blue"><i class="glyphicon glyphicon-phone"></i><b> <?php echo $order->order_contact; ?> <i class="glyphicon glyphicon-edit"></i></b></span>
           </td>
         </tr>
         <tr>
@@ -91,16 +88,16 @@
        </td>
 		
 		<td>
-			 <a href="{{URL::to('delete/' .$order->id)}}"><button class="btn btn-danger"> &laquo; CANCEL </button></a>
+			 <a href="<?php echo URL::to('delete/' .$order->id); ?>"><button class="btn btn-danger"> &laquo; CANCEL </button></a>
 		
-			<a href="{{URL::to('make-payment/' .$order->id)}}"><button class="btn btn-success ny"> CONFIRM AND PAY &raquo;</button>
+			<a href="<?php echo URL::to('make-payment/' .$order->id); ?>"><button class="btn btn-success ny"> CONFIRM AND PAY &raquo;</button>
 		</a>
 		<br><br>
 		</div>
 		</td>
 		</tr>
     </tbody>
-    @endforeach
+    <?php endforeach; ?>
     </table>
    
 
@@ -132,4 +129,5 @@ Nullam id dolor id nibh ultricies vehicula ut id elit.Nullam id dolor id nibh ul
 </p>
 
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.products', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

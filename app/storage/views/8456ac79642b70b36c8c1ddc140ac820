@@ -199,7 +199,7 @@
 <div class="well well-sm"><h4 class="yellow"><div class="feed-2"></div></h4></div>
    
   
-<div class="notice notice-danger"><h4 class="yellow"><!-- <i class="glyphicon glyphicon-thumbs-up"></i -->
+<div class="notice notice-white"><h4 class="yellow"><!-- <i class="glyphicon glyphicon-thumbs-up"></i -->
 
 <?php echo $__env->yieldContent('header'); ?>
 

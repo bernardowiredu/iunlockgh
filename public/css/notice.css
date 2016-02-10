@@ -34,7 +34,7 @@
 }
 .notice-warning {
     border-color: #FEAF20;
-    background-color: #fff;
+    background-color:#FCF8E3;
     color: #000;
 }
 .notice-warning>strong {
@@ -42,9 +42,16 @@
 }
 .notice-danger {
     border-color: #d73814;
-    background-color:#fff;
+    background-color:#F2DEDE;
     color: #000;
 }
 .notice-danger>strong {
     color: #d73814;
 }
+
+.notice-white {
+    border-color: #d73814;
+    background-color:#fff;
+    color: #000;
+}
+

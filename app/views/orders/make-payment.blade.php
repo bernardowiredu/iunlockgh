@@ -2,7 +2,7 @@
 
 
 @section('header')
-<h1 class="text-center blck">MAKE ORDER PAYMENT</h1>
+<h1 class="text-center blck2">MAKE ORDER PAYMENT</h1>
 @stop
 
 
@@ -91,7 +91,7 @@
     </div>
    </p>
 
-<p class="text-center blck">Didn't get your code? Sometimes it can take up to 15 minutes. If it's been longer than that, <span class="red">call 0503214360</span>. </p>
+<p class="text-center blck">Didn't get your code? Sometimes it can take up to 15 minutes. If it's been longer than that, <span class="red">call 0545343660</span>. </p>
 {{Form::close()}}
 <p class="text-center blck"> -OR-</p>
 
@@ -114,12 +114,12 @@
 <h4><b class="blue">STEPS TO MAKE PAYMENT</b></h4>
 <ul class="nav blck">
 <li>1. Send Mobile money to any of the numbers above either <b>Tigo Cash or MTN Moblie Money</b>.</li>
-<li>2. Once we recieve the money you sent us, a <b>PAY CODE eg.326578890</b> will sent to your Phone.</li>
+<li>2. Once we recieve the money you sent us, a <b>PAY CODE eg.32657</b> will sent to your Phone.</li>
 <li>3. Enter this code in the pay code form and click <b>PAY FOR ORDER</b> to make make payment and unlock your phone.</li>
 <li>4. Once payment is completed your phone unlocking process begins.</li>
 </ul>
 <br>
-<p class="blck">For any difficulties call <i class="glyphicon glyphicon-earphone"></i> <b>0503214360</b> for assistance</p>
+<p class="blck">For any difficulties call <i class="glyphicon glyphicon-earphone"></i> <b>0545343660</b> for assistance</p>
 </div>
 
 @stop
