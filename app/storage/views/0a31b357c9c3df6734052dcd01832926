@@ -933,7 +933,7 @@
   </footer>
  -->
 
-    <div class="nav">
+  <div class="nav">
   <footer class="">
       <div class="inline">
         <p>Copyright &copy; 2013-<?php echo date("Y"); ?> Perfectunlockgh.com All rights reserved. <a  data-toggle="modal" data-target=".bootstrapmodal" class="termsModal">Terms and conditions apply</a>
@@ -953,8 +953,9 @@
     <p>Kindly check the various mobile accounts before making payment.</p>
     <p>Current MTN money number is 
 
-      <h3 class="red"><b><img src="../public/img/mtn.png" class="responsive" width="80" height="40"> 0240479419</b></h3> and TIGO cash number is <h3 class="red"><b><img src="../public/img/Tigo-Cash-logo.jpg" class="responsive" width="80" height="40">0272439030</b></h3></p>
-    <p>You can make payment into your iunlockgh Account for the purchase of any product and if paying directly without your account for any order make sure you make mobile transfer payment before confirming your order. 
+      <h3 class="red"><b><img src="../public/img/mtn.png" class="responsive" width="80" height="40"> 0244072639</b></h3> and TIGO cash number is <h3 class="red"><b><img src="../public/img/Tigo-Cash-logo.jpg" class="responsive" width="80" height="40">0272439030</b></h3>
+      </p>
+    <p>You can make payment into your Perfectunlock Account for the purchase of any unlocking service and if paying directly without your account for any order make sure you make Mobile Transfer Payment before making online payment for your order. 
     In making mobile transfer use your account Username as Reference ID.</p>
 
     <hr class="text-inverse">
