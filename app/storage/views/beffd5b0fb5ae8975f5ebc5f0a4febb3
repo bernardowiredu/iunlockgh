@@ -56,7 +56,7 @@ You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, yo
 		<option>Select IMEI-CHECKER Service</option>
 		<option value="1" data-price="10" data-delivery="1-30 minutes" >NETWORK LOCK CHECK</option>
 		<option value="2" data-price="15" data-delivery="30-45 minutes">BLACKLISTED/BARRED/CLEAN CHECK</option>
-		<option value="3" data-price="free" data-delivery="1-15 minutes">FREE ICLOUD STATUS CHECK</option>
+		<option value="3" data-price="free" data-delivery="Instant">FREE ICLOUD STATUS CHECK</option>
 		<option value="4" data-price="30" data-delivery="10-20 miuntes">SPRINT USA - ALL IPHONE ELIGIBILITY TEST CLEAN/BLACKLISTED/UNPAID BILL</option>
 
 	</select>

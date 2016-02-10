@@ -16,6 +16,12 @@ class HelpController extends BaseController {
 	}
 
 
+	public function getTerms(){
+
+		return View::make('help.terms');
+	}
+
+
 
 	public function getFAQs(){
 

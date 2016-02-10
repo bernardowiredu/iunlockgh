@@ -114,8 +114,8 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-             <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> <sup class="badge">   3</sup></a></li>
-              <!-- <li class=""><a href="./">Balance: GH₵23 <span class="sr-only">(current)</span></a></li> -->
+             <!-- <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> <sup class="badge">   3</sup></a></li>
+             -->  <!-- <li class=""><a href="./">Balance: GH₵23 <span class="sr-only">(current)</span></a></li> -->
            <li><a href="../navbar-static-top/"><img src="../public/img/Ghana.png" width="40" height="25"></a></li>
             @if(!Auth::check())
               <li><a href="{{URL::to('login')}}"> Signin | Create account</a>
@@ -359,7 +359,7 @@
                       <ins class="ab zmin sprite sprite-i-triangle block"></ins>
                     </div>
               <div class="person-text rel">
-                        <img src="../public/img/comt.png"><a title="">{{$cat->username}}</a>{{$cat->location}}
+                        <img src="../public/img/comt.png"><a title="">{{$cat->username}}</a><span class="blck2">{{$cat->location}}</span>
               </div>
             </div>
      @endforeach
@@ -431,7 +431,7 @@
     <div class="nav">
      <footer class="">
       <div class="inline">
-        <p>Copyright &copy; 2015 iunlockgh.com <a  data-toggle="modal" data-target=".bootstrapmodal" class="termsModal">Terms and conditions</a>
+        <p class="blck2">Copyright &copy; 2015 iunlockgh.com <a  data-toggle="modal" data-target=".bootstrapmodal" class="termsModal">Terms and conditions</a>
         <i class="text-off"> | </i>
         <a href=""> How to buy</a>
         <ul class="nav">

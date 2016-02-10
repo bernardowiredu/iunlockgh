@@ -60,6 +60,7 @@ Route::get('FAQs', array('uses'=>'HelpController@getFAQs'));
 Route::get('payment-help', array('uses'=>'HelpController@getPaymentHelp'));
 Route::get('about-us', array('uses'=>'HelpController@getAbout'));
 Route::get('privacy', array('uses'=>'HelpController@getPrivacy'));
+Route::get('terms', array('uses'=>'HelpController@getTerms'));
 
 
 
