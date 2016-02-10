@@ -47,7 +47,12 @@
 <br><br><p></p>
 <div class="col-md-7 col-md-offset-4">
 <img src="../img/span.png" class="img-responsive" width="400" height="400">
+<br><br>
+<p class="push2x"><a href="{{URL::to('admin/categorys')}}"> <i class=""></i> Contiune to admin dashboard</a></p>
+
+
 </div>
+
 
 </body>
 </html>
