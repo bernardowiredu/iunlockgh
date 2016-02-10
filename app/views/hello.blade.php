@@ -107,7 +107,7 @@
               {{Form::close()}}
               </ul>
 
-              <!-- <li>
+             <!--  <li>
                 <script>
                 document.write(getDate());
                 </script>
