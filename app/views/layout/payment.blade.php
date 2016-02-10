@@ -98,7 +98,7 @@
               <!-- <li class=""><a href="./">Balance: GH₵23 <span class="sr-only">(current)</span></a></li> -->
            <li><a href="../navbar-static-top/"><img src="../public/img/Ghana.png" width="40" height="25"></a></li>
             @if(!Auth::check())
-              <li><a href="{{URL::to('login')}}"> SIGN IN | CREATE ACCOUNT </a></li>
+              <li><a href="{{URL::to('login')}}"> Signin | Create account</a>
             @else
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Logged in as {{Auth::user()->username}} <span class="caret"></span></a>

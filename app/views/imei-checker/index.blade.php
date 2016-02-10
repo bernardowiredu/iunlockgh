@@ -33,7 +33,7 @@
 
 </div>
 
-<div  class="well well-sm mf">IMEI Checker – Check Carrier, Lock Status and Firmware, Model name..</div>
+<div  class="well well-sm mf"><b>IMEI Checker – Check Carrier, Lock Status and Firmware, Model name</b></div>
 
 IMEI checking service is to check info like carrier name, lock status, model name, Serial, iOS firmware, ICCID, Activation status and some other details. 
 

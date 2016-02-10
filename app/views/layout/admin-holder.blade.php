@@ -77,8 +77,8 @@
                   
                   </ul>
               </li> -->
-              <li><a href="#"><i class="glyphicon glyphicon-user small"></i> LOGIN</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-user small"></i> REGISTER</a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-user small"></i> Login</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user small"></i> Register</a></li>
           </ul>
         </div>
       </div>

@@ -116,11 +116,11 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-             <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> <sup class="badge">   3</sup></a></li>
+            <!--  <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> <sup class="badge">   3</sup></a></li> -->
               <!-- <li class=""><a href="./">Balance: GH₵23 <span class="sr-only">(current)</span></a></li> -->
            <li><a href="../navbar-static-top/"><img src="../public/img/Ghana.png" width="40" height="25"></a></li>
             @if(!Auth::check())
-              <li><a href="{{URL::to('login')}}"> SIGN IN | CREATE ACCOUNT</a>
+              <li><a class="" href="{{URL::to('login')}}"> Signin | Create account</a>
              <!--  <li class="dropdown">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
                 <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
