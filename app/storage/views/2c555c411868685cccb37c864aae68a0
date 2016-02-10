@@ -1,15 +1,12 @@
-@extends('layout.main')
-
-
-@section('header')
+<?php $__env->startSection('header'); ?>
 
 <h1 class="text-center uptest blck2">ABOUT OUR SERVICES</h1>
 
-@stop
+<?php $__env->stopSection(); ?>
 
 
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 <br>
 <img src="../public/img/home.png" class="img-responsive">
 
@@ -42,4 +39,5 @@
 
 </section>
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

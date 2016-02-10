@@ -25,7 +25,7 @@
 
 @section('header')
 
-<i class="glyphicon glyphicon-folder-open blue"></i> Add Products
+<i class="glyphicon glyphicon-folder-open blue"></i> <h1 class="blck2"> Add products</h1>
 
 @stop
 

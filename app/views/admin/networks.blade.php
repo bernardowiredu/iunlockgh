@@ -16,8 +16,8 @@
             <li><a href="{{URL::to('admin/phones')}}"><i class=" glyphicon glyphicon-phone blue"></i> Phones</a></li>
             <li class="active"><a href="{{URL::to('admin/networks')}}"><i class=" glyphicon glyphicon-signal blue"></i> Networks</a></li>
             <li><a href="{{URL::to('report')}}"><i class=" glyphicon glyphicon-send blue"></i> Inbox</a></li>
-            <li><a href="{{URL::to('news')}}"><i class="glyphicon glyphicon-question-sign blue"></i> News</a></li>
-            <li><a href="{{URL::to('FAQs')}}"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
+            <li><a href="{{URL::to('admin/news')}}"><i class="glyphicon glyphicon-question-sign blue"></i> News</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
           </ul>
           <br>
           </div>
@@ -25,7 +25,7 @@
 
 @section('header')
 
-<img src="../img/chart_up.png"> Networks
+<img src="../img/chart_up.png"> <h1 class="blck2">Networks</h1>
 
 @stop
 

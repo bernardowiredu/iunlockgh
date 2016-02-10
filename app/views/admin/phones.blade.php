@@ -24,7 +24,7 @@
 
 
 @section('header')
-<i class=" glyphicon glyphicon-phone blue"></i>
+<i class=" glyphicon glyphicon-phone blue"></i><h1 class="blck2">Phones</h1>
 
 @stop
 

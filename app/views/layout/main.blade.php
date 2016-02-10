@@ -224,7 +224,7 @@
 <div class="well well-sm"><h4 class="yellow"><div class="feed-2"></div></h4></div>
    
   
-<div class="well well-sm "><h4 class="yellow"></i> 
+<div class="notice notice-white "><h4 class="yellow"></i> 
 
 @yield('header')
 

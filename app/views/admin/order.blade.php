@@ -30,7 +30,7 @@
 
 @section('header')
 
-<img src="../img/folder_modified.png"> Users Orders
+<img src="../img/folder_modified.png"><h1 class="blck2"> Orders</h1>
 
 @stop
 

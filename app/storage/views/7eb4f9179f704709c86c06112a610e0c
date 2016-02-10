@@ -1,39 +1,37 @@
-@extends('layout.dashboard')
-
-@section('sidebar')
+<?php $__env->startSection('sidebar'); ?>
 
 <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
           <br>
-            <li><a href="{{URL::to('dashboard')}}"><i class="glyphicon glyphicon-dashboard blue"></i> Dashboard <span class="sr-only">(current)</span></a></li>
-            <li><a href="{{URL::to('editprofile')}}"><i class="glyphicon glyphicon-user blue"></i> Edit profile</a></li>
-            <li class="active"><a href="{{URL::to('messages')}}"><i class="glyphicon glyphicon-comment blue"></i> Messages <sup><span class="badge"> 3</span></sup></a></li>
-            <li><a href="{{URL::to('order-history')}}"><i class="glyphicon glyphicon-folder-open blue"></i> Order history</a></li>
-            <li><a href="{{URL::to('payments')}}"><i class="glyphicon glyphicon-credit-card blue"></i> Add funds</a></li>
-            <li><a href="{{URL::to('unlock-request')}}"><i class="glyphicon glyphicon-phone blue"></i> Unlock request</a></li>
-            <li><a href="{{URL::to('track-order')}}"><i class=" glyphicon glyphicon-search blue"></i> Track order</a></li>
-            <li><a href="{{URL::to('report')}}"><i class=" glyphicon glyphicon-send blue"></i> Reports</a></li>
-            <li><a href="{{URL::to('FAQs')}}"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
+            <li><a href="<?php echo URL::to('dashboard'); ?>"><i class="glyphicon glyphicon-dashboard blue"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="<?php echo URL::to('editprofile'); ?>"><i class="glyphicon glyphicon-user blue"></i> Edit profile</a></li>
+            <li class="active"><a href="<?php echo URL::to('messages'); ?>"><i class="glyphicon glyphicon-comment blue"></i> Messages <sup><span class="badge"> 3</span></sup></a></li>
+            <li><a href="<?php echo URL::to('order-history'); ?>"><i class="glyphicon glyphicon-folder-open blue"></i> Order history</a></li>
+            <li><a href="<?php echo URL::to('payments'); ?>"><i class="glyphicon glyphicon-credit-card blue"></i> Add funds</a></li>
+            <li><a href="<?php echo URL::to('unlock-request'); ?>"><i class="glyphicon glyphicon-phone blue"></i> Unlock request</a></li>
+            <li><a href="<?php echo URL::to('track-order'); ?>"><i class=" glyphicon glyphicon-search blue"></i> Track order</a></li>
+            <li><a href="<?php echo URL::to('report'); ?>"><i class=" glyphicon glyphicon-send blue"></i> Reports</a></li>
+            <li><a href="<?php echo URL::to('FAQs'); ?>"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
           </ul>
           <br>
         </div>
 
-@stop
+<?php $__env->stopSection(); ?>
 
 
-@section('header')
+<?php $__env->startSection('header'); ?>
 
-<img src="../public/img/folder_conflicted.png" class="img-responsive"> Messages
+<img src="../public/img/folder_conflicted.png"> Messages
 
-@stop
+<?php $__env->stopSection(); ?>
 
 
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
-@include('common.notification')
+<?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
  <div class="tabbable"> 
         <ul class="nav nav-tabs well well-sm mh">
@@ -59,13 +57,15 @@
            <p><i class="glyphicon glyphicon-dashboard"></i>: <b>2015-09-98</b> <span class="navy2">|</span> <i class="icon-share-alt"></i><b> customer service</b> </p>
             <div id="collapse1" class="panel-collapse collapse"> 
             <div class="panel-body">
-                {{Form::open(array('url'=>'contacts', 'method'=>'POST'))}}
+                <?php echo Form::open(array('url'=>'contacts', 'method'=>'POST')); ?>
+
                 <input type="hidden" class="input-xlarge" name="title" value="Reply to message"> 
                 <input type="hidden" class="input-xlarge" name="email" value="">
                 <input type="hidden" class="input-xlarge" name="help" value="reply">
                 <textarea cols="300" name="message" rows="3"></textarea>
                 <button type="submit"class="btn btn-default"> Reply</button>
-                {{Form::close()}}
+                <?php echo Form::close(); ?>
+
             
             </div>
             </div>
@@ -87,4 +87,5 @@
     </div>
     </div>
     </div>
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.dashboard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

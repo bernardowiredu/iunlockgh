@@ -25,8 +25,7 @@
 
 @section('header')
 
-<img src="../img/pounds.png"> Payments
-
+<img src="../img/pounds.png"> <h1 class="blck2"> Payments</h1>
 @stop
 
 

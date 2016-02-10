@@ -1,6 +1,8 @@
 @extends('layout.admin')
 
-
+@section('header')
+<h1 class="blck2">News Update</h1>
+@stop
 
 @section('sidebar')
 
@@ -19,7 +21,7 @@
             <li><a href="{{URL::to('report')}}"><i class=" glyphicon glyphicon-send blue"></i> Inbox</a></li>
             <li class="active"><a href="{{URL::to('admin/news')}}"><i class="glyphicon glyphicon-question-sign blue"></i> News</a></li>
             <li><a href="{{URL::to('FAQs')}}"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
-          </ul>blue
+          </ul>
           	<br>
           	</div>
 @stop
@@ -32,7 +34,7 @@
 
 			{{Form::open(array('url'=>'admin/news', 'method'=>'POST'))}}
 
-			<label>Enter News Update<i class="text-danger"> **</i></label>
+			<label class="blck2">Enter News Update<i class="text-danger"> **</i></label>
 			<textarea cols="10" rows="15" class="form-control" name="message" placeholder="Enter news update" required></textarea>
 			  <input type="hidden" class="form-control" name="date" id="date" value="{{date("Y-m-d")}}">
 			<p></p>
