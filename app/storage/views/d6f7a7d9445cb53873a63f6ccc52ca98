@@ -56,39 +56,40 @@
          </div>
         <div class="well well-sm  around col-md-6 notice-info">
         <h4 class="blck">ORDER DETAILS</h4>
-          <b class="blck">Your {{$order->product_name}} unlocking service <font color="green">(working)</font></b>
-          <p class="text-muted">Unlocking time: {{$order->delivery}}</p>
-          <h4 class="blck"><b>Total: GH₵ {{$order->price}}</b></h4>
+          <b class="blck">Your <?php echo $order->product_name; ?> unlocking service <font color="green">(working)</font></b>
+          <p class="text-muted">Unlocking time: <?php echo $order->delivery; ?></p>
+          <h4 class="blck"><b>Total: GH₵ <?php echo $order->price; ?></b></h4>
 
          </div>
           <div class="col-md-3 pull-right">
           <b>Your Balance<b class="caret"></b></b>
-          <h4><font color="#286090"><b>GH₵ {{Auth::user()->balance}}</b></font></h4>
+          <h4><font color="#286090"><b>GH₵ <?php echo Auth::user()->balance; ?></b></font></h4>
         </div>
 
 
         <!-- This is the interprative reading odf the whole thing for the wring about the w                                                                 -->
         <!-- <p class="text-center">https://www.xmlgold.eu/en/processPayment/status/bbe73383338363230323</p> -->
               <br><br><br><br><br><br><br><br><br>                                                                                                                                                                                 
-        @include('common.notification')                                                                                                                                                                                                                                                                                                              
-      {{Form::open(array('url'=>'pay', 'method'=>'POST'))}}
+        <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>                                                                                                                                                                                                                                                                                                              
+      <?php echo Form::open(array('url'=>'pay', 'method'=>'POST')); ?>
+
       <p>
       <label class="blck"><b>Contact number</b><i class="text-danger"> **</i></label></label>
-      <input type="text" class="form-control" value="{{$order->order_contact}}"  name="telephone" >
+      <input type="text" class="form-control" value="<?php echo $order->order_contact; ?>"  name="telephone" >
       <span class="red"><b>Enter a valid mobile number to recieve order notifications</b></span>
       </p>
 
-      <input type="hidden" class="form-control" value="{{$order->product_name}}"  name="product_model" >
-      <input type="hidden" class="form-control" value="{{$order->network_name}}"  name="network_name" >
-      <input type="hidden" class="form-control" value="{{$order->delivery}}"  name="delivery_time">
-      <input type="hidden" class="form-control" value="{{$order->p_id}}" name="p_id">
-      <input type="hidden" class="form-control" value="{{$order->id}}"  name="id" >
+      <input type="hidden" class="form-control" value="<?php echo $order->product_name; ?>"  name="product_model" >
+      <input type="hidden" class="form-control" value="<?php echo $order->network_name; ?>"  name="network_name" >
+      <input type="hidden" class="form-control" value="<?php echo $order->delivery; ?>"  name="delivery_time">
+      <input type="hidden" class="form-control" value="<?php echo $order->p_id; ?>" name="p_id">
+      <input type="hidden" class="form-control" value="<?php echo $order->id; ?>"  name="id" >
 
-      <input type="hidden" class="form-control" value="{{$order->price}}"  name="price" >
+      <input type="hidden" class="form-control" value="<?php echo $order->price; ?>"  name="price" >
 
       <p>
       <label class="blck"><b>Order IMEI</b><i class="text-danger"></i></label></label>
-      <input type="text" class="form-control" value="{{$order->imei}}"  name="imei">
+      <input type="text" class="form-control" value="<?php echo $order->imei; ?>"  name="imei">
       
       </p>
 
@@ -107,7 +108,8 @@
           <input type="password" class="form-control" id="exampleInputAmount" name="password" placeholder="Enter your password" required>
          <button class="btn btn-primary btn-block">Pay for order</button>
 
-         {{Form::close()}}
+         <?php echo Form::close(); ?>
+
         </div>
       </div>
      
@@ -117,7 +119,7 @@
      <br>
     </div>
     </div>
-         <p class="text-center">Copyright &copy; 2013-{{date("Y")}} Perfectunlockgh.com All rights reserved.</p>
+         <p class="text-center">Copyright &copy; 2013-<?php echo date("Y"); ?> Perfectunlockgh.com All rights reserved.</p>
   </div>
   </div>
 

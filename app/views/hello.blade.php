@@ -947,17 +947,19 @@
     <p class="red">For payment in Paypal or Bitcoin email us directly: info.iunlockgh@gmail.com</p>
     </div>
     </div>
+    <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-            var $_Tawk_API={},$_Tawk_LoadStart=new Date();
-            (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/54b86851289aef4754422f80/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-            })();
-            </script>
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/56bb5cee4003e62e1740b559/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+<!--End of Tawk.to Script-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

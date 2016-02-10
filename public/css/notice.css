@@ -18,7 +18,7 @@
 }
 .notice-success {
     border-color: #80D651;
-    background-color: #ffffff;
+    background-color: #DFF0D8;
     color: #000;
 }
 .notice-success>strong {
@@ -26,7 +26,7 @@
 }
 .notice-info {
     border-color: #45ABCD;
-    background-color: #fff;
+    background-color: #D9EDF7;
     color: #000;
 }
 .notice-info>strong {
