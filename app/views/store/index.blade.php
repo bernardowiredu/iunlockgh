@@ -36,7 +36,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top mf">
+    <nav class="navbar navbar-default navbar-fixed-top ">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -244,12 +244,12 @@
 
     </div>
 
-    <footer class="mg">
+    <!-- <footer class="mg">
       <div class="container mg">
         <p class="text-muted">Copyright &copy; 2013-{{date("Y")}} iunlockgh.com All rights reserved.</p>
       </div>
     </footer>
-
+ -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
