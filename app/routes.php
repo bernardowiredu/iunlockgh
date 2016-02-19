@@ -110,43 +110,15 @@ View::share('products', Product::all());
 
 
 Route::get('imei-checker', array('uses'=>'ImeiController@getIndex'));
-
-
-/*Route::get('order-status', array('uses'=>'OrderController@getStatus'));*/
-
-/*Route::get('track-order', array('uses'=>'OrderController@getTrack'));*/
-
-
-
-
-Route::get('products/{id}', array('uses'=>'CategoryController@getproducts'));
-
-
-
-
-
+Route::get('products/{name}', array('uses'=>'CategoryController@getproducts'));
 Route::get('blog', array('uses'=>'BlogController@getIndex'));
-
-
-
-
-
-
 Route::get('reseller', array('uses'=>'ResellerController@getIndex'));
 Route::post('contact', array('uses'=>'ContactController@postReport'));
 Route::post('gevey', array('uses'=>'GeveyController@postGevey'));
-
-
-
-
-
 Route::post('btc', array('uses'=>'BtcController@postBtc'));
-
-
-
-
-
 Route::post('comment', array('uses'=>'CommentController@postComments'));
+
+
 
 
 /********************ADMIN CONTROLLER**********************************/
