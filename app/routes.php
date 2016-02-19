@@ -110,7 +110,7 @@ View::share('products', Product::all());
 
 
 Route::get('imei-checker', array('uses'=>'ImeiController@getIndex'));
-Route::get('products/{name}', array('uses'=>'CategoryController@getproducts'));
+Route::get('products/{id}', array('uses'=>'CategoryController@getproducts'));
 Route::get('blog', array('uses'=>'BlogController@getIndex'));
 Route::get('reseller', array('uses'=>'ResellerController@getIndex'));
 Route::post('contact', array('uses'=>'ContactController@postReport'));
