@@ -18,7 +18,7 @@ With the Phone IMEI Blacklist Check you will be able to find out whether your ph
 
 If you are planning to buy a second hand phone you better check its IMEI before. If the IMEI was ever reported lost or stolen you might not be able to use it in your country.
 
-Your IMEI will be checked in the biggest database in the world (there are over 150 billion records of information on the database).
+Your IMEI will be checked in the biggest database in the world (there are over 150 billion records of information on the database.
 
 After checking your IMEI you will be able to download a full report showing you if your IMEI it's Clean or Blocked. See sample below:
 <br><br>

@@ -1,0 +1,67 @@
+
+
+
+<?php $__env->startSection('header'); ?>
+
+<h1 class="text-center uptest blck2">customer reviews</h1>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+
+<h2 class="blck2">Write a customers review</h2>
+
+<?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+   <div class="form-group">
+
+   <?php echo Form::open(array('url'=>'comment', 'method'=>'POST', 'id'=>'com')); ?>
+
+
+    <label for="message-text" class="control-label blck2">Username:</label>
+    <input type="text" class="form-control" name="username" id="username"><br>
+
+    <label for="message-text" class="control-label blck2">Location</label>
+    <input type="text" class="form-control" name="location" id="location">
+
+    <input type="hidden" class="form-control" name="time" id="time" value="<?php echo date("h:i:sa"); ?>">
+    <input type="hidden" class="form-control" name="date" id="date" value="<?php echo date("Y-m-d"); ?>">
+    <br>
+
+    <label for="message-text" class="control-label blck2">Comments:</label>
+    <textarea class="form-control" cols="3" rows="6" name="comments" id="message_text"></textarea>
+     
+      <input type="submit" class="btn btn-success"></button>  
+
+      <?php echo Form::close(); ?>        
+             
+  </div>
+  </div>
+</div>
+
+
+
+<?php foreach($reviews as $review): ?>
+<div class="panel panel-default">
+<div class="panel-body">
+<p class="blue"><?php echo $review->date; ?> <?php echo $review->time; ?> </p>
+<?php echo $review->comments; ?>
+
+<p class="text-right blue"><?php echo $review->username; ?> / <?php echo $review->location; ?> </p>
+</div>
+</div>
+<?php endforeach; ?>
+
+
+ <div class="pagination pagination-right pull-right">
+	<ul style="list-style:none">
+		<li><?php echo $reviews->links(); ?></li>
+	</ul>
+
+</div>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -53,8 +53,8 @@
 
 <div class="well mh">
 <p>Send mobile money to</p> 
-<p><img src="../public/img/mtn.jpg" width="70" height="50"><span> =  <b>0240479419</b></span></p>
-<p><img src="../public/img/airtel-mobile.png" width="70" height="50"><span> = <b>0272439030</b></span></p>
+<p><img src="../public/img/mtn.jpg" width="70" height="50"><span> =  <b>0244072639</b></span></p>
+<p><img src="../public/img/airtel-mobile.png" width="70" height="50"><span> = <b>027xxxxxxx</b></span></p>
 
 <h4>STEPS TO MAKE PAYMENT</h4>
 <ul class="nav">
@@ -64,6 +64,6 @@
 <li>4. Once payment is completed your phone unlocking process begins.</li>
 </ul>
 <br>
-<p>For any difficulties call <i class="glyphicon glyphicon-earphone"></i> <b>0503214360</b> for assistance</p> 
+<p>For any difficulties call <i class="glyphicon glyphicon-earphone"></i> <b>0560094454</b> for assistance</p> 
 </div>
 @stop

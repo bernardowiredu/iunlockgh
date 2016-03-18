@@ -29,7 +29,7 @@
 <!-- </div> -->
 <br>
 <img src="../img/mobile_phone.png">
-<p class="txt-shadow">You can call <span class="blue"><b>0504214360</b></span> for order support
+<p class="txt-shadow">You can call <span class="blue"><b>0560094454</b></span> for order support
 before proceeding if not certain about order</p>
 </div>
 <div class="col-xs-9 col-md-9">
@@ -171,7 +171,7 @@ Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio,</p> -->
 
 <p><span>1. </span> I understand orders which have already been sent in for processing cannot be cancelled while in transit. Your order may only be cancelled upon OUR approval.</p>
 <p><span>2. </span> I understand that video proof may be required if there is a claim the unlock solution provided does not unlock the device. Although this may rarely occur, it may be a requirement from the manufacturer to retrieve a new code or a refund as a last resort</p>
-<p><span>3. </span> I understand that UnlockCode4U.com Guarantees 100% to fully and permanently unlock my phone's network. It will be my responsibility to verify the phone which I am unlocking will be compatible with the network I wish to use it on. If a custom ROM has been <!-- installed or there are software issues that does not allow the unlock solution to work on the device, it may be required to restore the original ROM or to upgrade it in order to successfully use the Unlock Code. --></p>
+<p><span>3. </span> I understand that Perfectunlockgh.com Guarantees 100% to fully and permanently unlock my phone's network. It will be my responsibility to verify the phone which I am unlocking will be compatible with the network I wish to use it on. If a custom ROM has been <!-- installed or there are software issues that does not allow the unlock solution to work on the device, it may be required to restore the original ROM or to upgrade it in order to successfully use the Unlock Code. --></p>
 </div>
 </div>
 <div class="visible-xs">
@@ -187,7 +187,7 @@ Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio,</p> -->
 
 <p><span>1. </span> I understand orders which have already been sent in for processing cannot be cancelled while in transit. Your order may only be cancelled upon OUR approval.</p>
 <p><span>2. </span> I understand that video proof may be required if there is a claim the unlock solution provided does not unlock the device. Although this may rarely occur, it may be a requirement from the manufacturer to retrieve a new code or a refund as a last resort</p>
-<p><span>3. </span> I understand that UnlockCode4U.com Guarantees 100% to fully and permanently unlock my phone's network. It will be my responsibility to verify the phone which I am unlocking will be compatible with the network I wish to use it on. If a custom ROM has been <!-- installed or there are software issues that does not allow the unlock solution to work on the device, it may be required to restore the original ROM or to upgrade it in order to successfully use the Unlock Code.</p>
+<p><span>3. </span> I understand that Perfectunlockgh.com Guarantees 100% to fully and permanently unlock my phone's network. It will be my responsibility to verify the phone which I am unlocking will be compatible with the network I wish to use it on. If a custom ROM has been <!-- installed or there are software issues that does not allow the unlock solution to work on the device, it may be required to restore the original ROM or to upgrade it in order to successfully use the Unlock Code.</p>
  --></div>
 </div>
 <br>

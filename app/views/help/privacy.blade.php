@@ -37,7 +37,7 @@ Privacy Policy
 
 We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.
 
-<p class="note">* For order related inquiries, please call our helpline <span> 0503214360</span> for assistance .</p>
+<p class="note">* For order related inquiries, please call our helpline <span> 0244072639</span> for assistance .</p>
 
 
 

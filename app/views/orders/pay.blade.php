@@ -96,7 +96,7 @@
       <div class="col-md-12">
       <div class="col-md-7">
         <img src="../img/contact-center-badge-lg.png" width="64" height="64">
-        <span>Need help? Call us on 0545343660</span>
+        <span>Need help? Call us on 0560094454</span>
       </div>
       <div class="col-md-5">
       <div class="form-inline pull-right">

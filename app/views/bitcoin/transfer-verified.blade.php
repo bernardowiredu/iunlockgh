@@ -59,7 +59,7 @@
      </center> 
          
     </div>
-         <p class="text-center blck2">Copyright &copy; 2013-{{date("Y")}} Perfectunlockgh.com All rights reserved.</p>
+         <p class="text-center blck2">Copyright &copy; 2016-{{date("Y")}} Perfectunlockgh.com All rights reserved.</p>
   </div>
   </div>
 

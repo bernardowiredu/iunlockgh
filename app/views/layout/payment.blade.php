@@ -59,7 +59,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{URL::to('/')}}"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">UnlockGh</span></a>
+            <a class="navbar-brand" href="{{URL::to('/')}}"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">Unlockgh</span></a>
           </div>
         <div id="navbar" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav">
@@ -177,7 +177,7 @@
         <div class="col-sm-1 col-md-2">
         <li>
          <li>
-            Contact <i class="glyphicon glyphicon-phone-alt blue"></i> 0244049419
+            Contact <i class="glyphicon glyphicon-phone-alt blue"></i> 0244072639
          </li>
         </div>
         </ul>
@@ -217,7 +217,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="exampleModalLabel">Write your testimonal@iunlockgh</h4>
+              <h4 class="modal-title" id="exampleModalLabel">Write your testimonal@Perfectunlockgh</h4>
             </div>
             <div class="modal-body">
               <form>
@@ -281,7 +281,7 @@
 
   <div class="nav">
   <div class="well well-md text-center">
-  <h3><i class="glyphicon glyphicon-phone-alt"></i> For mobile helplines please contact <a class="yellow" href="#">0503214360</a> OR <a class="yellow" href="#">0244072639</a> OR <a class="yellow" href="#">0501366148</a>.<br> You can also email us at <a class="yellow" href="mailto:info.iulockgh@shop.com">info.iunlockgh.com</a></h3><br>
+  <h3><i class="glyphicon glyphicon-phone-alt"></i> For mobile helplines please contact <a class="yellow" href="#">0560094454</a> OR <a class="yellow" href="#">0244072639</a> OR <a class="yellow" href="#">0269477119</a>.<br> You can also email us at <a class="yellow" href="mailto:info.iulockgh@shop.com">info.perfectunlockgh.com</a></h3><br>
   </div>
   </div>
 
@@ -334,7 +334,7 @@
     <div class="nav">
      <footer class="">
       <div class="inline">
-        <p>Copyright &copy; 2015 iunlockgh.com <a  data-toggle="modal" data-target=".bootstrapmodal" class="termsModal">Terms and conditions</a>
+        <p>Copyright &copy; 2016 Perfectunlockgh.com <a  data-toggle="modal" data-target=".bootstrapmodal" class="termsModal">Terms and conditions</a>
         <i class="text-off"> | </i>
         <a href=""> How to buy</a>
         <!-- <ul class="nav">

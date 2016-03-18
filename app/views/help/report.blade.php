@@ -38,12 +38,12 @@
 <div class="page-header">
 <h3 class="txt-shadow">Contact us</h3>
 </div>
-<p>For customer service please call us: <b>0501366026</b>,
+<p>For customer service please call us: <b>0560094454</b>,
 <b>0244072639</b></p>
 <br>
 <p>Alternatively, you can contact customer service by email.</p>
 <hr>
-<p> For order related inquiries, please call our helpline <b>0503214360</b> for assistance .</p>
+<p> For order related inquiries, please call our helpline <b>0560094454</b> for assistance .</p>
 </div>
 <p></p>
 <div class="col-sm-7 col-md-6 well well-lg mf blck">

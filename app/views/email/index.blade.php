@@ -110,7 +110,7 @@
             <div class="footer">
                         <table width="100%">
                             <tr>
-                                <td class="aligncenter content-block"><a href="{{URL::to('/')}}">Copyright &copy; 2013-{{date("Y")}} iunlockgh.com All rights reserved</a></td>
+                                <td class="aligncenter content-block"><a href="{{URL::to('/')}}">Copyright &copy; 2016-{{date("Y")}} Perfectunlockgh.com All rights reserved</a></td>
                             </tr>
                         </table>
             </div>
