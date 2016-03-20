@@ -34,7 +34,7 @@
 @section('content')
 
 @include('common.notification')
-<h3>Create Category</h3>
+<h3>Create Brand</h3>
 {{Form::open(array('url'=>'category', 'method'=>'POST'))}}
 <input type="text" class="form-control" placeholder="create category" name="name"><br>
 <button class="btn btn-success"> create category</button>
