@@ -362,10 +362,10 @@
         <div class="caption">
         <h4><strong>Verizon</strong></h4>
         <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense</p>
-       <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+</b></span></p>
+       <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+/6S/6S+</b></span></p>
          <p class="">Delivery Time: <span class="yellow"><b>1-7days</b></span></p>
         <a class="btn btn-block btn-success" role="button" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-        Unlock Phone at GH₵ 50.00
+        Unlock Phone From GH₵ 50.00
       </a>
       <div class="collapse" id="collapseExample4">
       <div class="well">
@@ -374,6 +374,8 @@
 
         <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <select class="form-control" name="product_name">
+          <option>iPhone 3g</option>
+          <option>iPhone 3gs</option>
           <option>iPhone 4s</option>
           <option>iPhone 5</option>
           <option>iPhone 5c</option>
@@ -381,6 +383,7 @@
           <option>iPhone 6</option>
           <option>iPhone 6+</option>
           <option>iPhone 6s</option>
+          <option>iPhone 6s+</option>
         </select><br>
         <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br> 
         <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
@@ -410,11 +413,11 @@
       <div class="caption">
         <h4><strong>T-mobile</strong></h4>
         <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense</p>
-        <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+</b></span></p>
+        <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+/6S/6S+</b></span></p>
          <p class="">Delivery Time: <span class="yellow"><b>1-7days</b></span></p>
           
           <a class="btn btn-block btn-primary" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-            Unlock Phone at GH₵ 50.00
+            Unlock Phone From GH₵ 50.00
           </a>
           <div class="collapse" id="collapseExample1">
           <div class="well">
@@ -422,7 +425,8 @@
 
           <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
           <select class="form-control" name="product_name">
-          
+          <option>iPhone 3g</option>
+          <option>iPhone 3gs</option>
           <option>iPhone 4s</option>
           <option>iPhone 5</option>
           <option>iPhone 5c</option>
@@ -430,6 +434,7 @@
           <option>iPhone 6</option>
           <option>iPhone 6+</option>
           <option>iPhone 6s</option>
+           <option>iPhone 6s+</option>
         </select><br>
           <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br>
            <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
@@ -458,10 +463,10 @@
       <div class="caption">
         <h4><strong>Sprint</strong></h4>
         <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense</p>
-         <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+</b></span></p>
+         <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+/6S/6S+</b></span></p>
          <p class="">Delivery Time: <span class="yellow"><b>1-7days</b></span></p>
         <a class="btn btn-block btn-warning" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-            Unlock Phone at GH₵ 50.00
+            Unlock Phone From GH₵ 50.00
           </a>
           <div class="collapse" id="collapseExample2">
           <div class="well">
@@ -469,6 +474,8 @@
 
           <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
           <select class="form-control" name="product_name">
+          <option>iPhone 3g</option>
+          <option>iPhone 3gs</option>
           <option>iPhone 4s</option>
           <option>iPhone 5</option>
           <option>iPhone 5c</option>
@@ -476,6 +483,7 @@
           <option>iPhone 6</option>
           <option>iPhone 6+</option>
           <option>iPhone 6s</option>
+           <option>iPhone 6s+</option>
         </select><br>
           <input type="text" class="form-control" placeholder="Enter your IMEI name" name="imei"><br>
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
@@ -502,12 +510,12 @@
     <div class="thumbnail">
       <img class="pull-right" src="img/iphone-56.jpg" alt="product" width="140" height="160">
       <div class="caption">
-       <h4><strong>Virgin</strong></h4>
+       <h4><strong>AT&T</strong></h4>
         <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense</p>
-         <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+</b></span></p>
+         <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+/6S/6S+</b></span></p>
          <p class="">Delivery Time: <span class="yellow"><b>1-7days</b></span></p>
         <a class="btn btn-block btn-danger" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-            Easy Unlock Phone at GH₵ 50.00
+            Easy Unlock Phone From GH₵ 50.00
           </a>
           <div class="collapse" id="collapseExample3">
           <div class="well">
@@ -515,6 +523,8 @@
 
           <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
           <select class="form-control" name="product_name">
+          <option>iPhone 3g</option>
+          <option>iPhone 3gs</option>
           <option>iPhone 4</option>
           <option>iPhone 4s</option>
           <option>iPhone 5</option>
@@ -523,6 +533,7 @@
           <option>iPhone 6</option>
           <option>iPhone 6+</option>
           <option>iPhone 6s</option>
+           <option>iPhone 6s+</option>
           </select><br>
           <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br>
           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="Verizon">
@@ -560,7 +571,7 @@
    guarantying Faster Results and 100% Customer Services Satisfaction.</p>
 
     <h4 class="blue"><img src="../public/img/earth.png"  class="hidden-xs img-thumbnail" alt="pic" width="65" height="65" ><b> We can Unlock 99% of the GSM Networks</b></h4>
-   <p class="push">At iunlockGh we can unlock most of the GSM Networks around the world. If you are trying to unlock a phone in Europe, America, Asia, Australia and over 190 Countries in the World, give us the challenge and you won't regret. We count with the largest database of unique Unlock Codes and Unlocking solutions in Earth.
+   <p class="push">At Perfectunlockgh we can unlock most of the GSM Networks around the world. If you are trying to unlock a phone in Europe, America, Asia, Australia and over 190 Countries in the World, give us the challenge and you won't regret. We count with the largest database of unique Unlock Codes and Unlocking solutions in Earth.
     We can even unlock the phones which Service Providers claim cannot be unlocked</p>
 
      <h4 class="blue"><img src="../public/img/unlock.png"  class="img-thumbnail hidden-xs" alt="pic" width="70" height="70" ><b> We offer the LOWEST COST & QUICKEST TURNAROUND on every order.</b></h4>
@@ -854,7 +865,7 @@
   <div class="nav">
   <div class="well well-lg text-center">
   <h3><i class="glyphicon glyphicon-phone-alt blue"></i><span class="blck2
-  '"> For mobile helplines please contact  <a class="yellow" href="#">0560094454</a> OR <a class="yellow" href="#">0244072639</a> OR <a class="yellow" href="#">0269477119</a>.<br> You can also email us at <a class="yellow" href="mailto:info.iulockgh@shop.com">info.perfectunlockgh.com</a></h3><br>
+  '"> For mobile helplines please contact  <a class="yellow" href="#">0560094454</a> OR <a class="yellow" href="#">0244072639</a> OR <a class="yellow" href="#">0269477119</a>.<br> You can also email us at <a class="yellow" href="mailto:info.iulockgh@shop.com">info.perfectunlockgh@gmail.com</a></h3><br>
   </span></div>
   </div>
 
