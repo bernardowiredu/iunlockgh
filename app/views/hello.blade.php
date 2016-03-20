@@ -143,6 +143,10 @@
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="{{URL::to('dashboard')}}">DASHBOARD</a></li>
                   <li><a href="{{URL::to('order-status')}}">CHECK ORDER STATUS</a></li>
+                  @if(Auth::user()->role == 1)
+                  <li><a href="{{URL::to('admin/categorys')}}">ADMIN HOME</a></li>
+                  @else
+                  @endif
                   <li class="divider"></li>
                   <li><a href="{{URL::to('signout')}}">LOGOUT</a></li>
                   </ul>
