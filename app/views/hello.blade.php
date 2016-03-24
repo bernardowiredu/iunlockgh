@@ -371,36 +371,27 @@
       </a>
       <div class="collapse" id="collapseExample4">
       <div class="well">
-        <!-- forms open -->
-        {{Form::open(array('url'=>'order', 'method'=>'POST'))}}
-        @include('common.notification')
-        <select class="form-control" name="product_name">
-          <option>iPhone 3g</option>
-          <option>iPhone 3gs</option>
-          <option>iPhone 4s</option>
-          <option>iPhone 5</option>
-          <option>iPhone 5c</option>
-          <option>iPhone 5s</option>
-          <option>iPhone 6</option>
-          <option>iPhone 6+</option>
-          <option>iPhone 6s</option>
-          <option>iPhone 6s+</option>
-        </select><br>
-        <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br> 
-        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
-        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="490">
-        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
-        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
-        <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery" value="11-15 days">
-        <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
-        <input type="text" class="form-control" placeholder=" Enter your mobile number" name="order_contact"><br>
-        <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
-        @if(!Auth::check())
-           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
-          @else
-          <p><button class="btn btn-success" type="submit">Create order</button></p>
-          @endif
-        {{Form::close()}}
+                  <form name="Network">
+          <select class="form-control" name="phone" onChange="go()">
+          <option value="{{URL::to('product/9')}}">iPhone 4</option>
+          <option value="{{URL::to('product/8')}}">iPhone 4s</option>
+          <option value="{{URL::to('product/7')}}">iPhone 5</option>
+          <option value="{{URL::to('product/6')}}">iPhone 5c</option>
+          <option value="{{URL::to('product/5')}}">iPhone 5s</option>
+          <option value="{{URL::to('product/3')}}">iPhone 6</option>
+          <option value="{{URL::to('product/4')}}">iPhone 6+</option>
+          <option value="{{URL::to('product/2')}}">iPhone 6s</option>
+          <option value="{{URL::to('product/1')}}">iPhone 6s+</option> 
+          </select>
+           <script type="text/javascript">
+            function go() {
+            location= document.Network.phone.
+            options[document.Network.phone.selectedIndex].value
+            }
+          </script>
+          <br>
+          <input type="button" class="btn btn-warning" value="Go" onClick="go()">
+          </form>
       </div>
       </div>
       </div>
@@ -421,35 +412,27 @@
           </a>
           <div class="collapse" id="collapseExample1">
           <div class="well">
-          {{Form::open(array('url'=>'order', 'method'=>'POST'))}}
-          @include('common.notification')
-          <select class="form-control" name="product_name">
-          <option>iPhone 3g</option>
-          <option>iPhone 3gs</option>
-          <option>iPhone 4s</option>
-          <option>iPhone 5</option>
-          <option>iPhone 5c</option>
-          <option>iPhone 5s</option>
-          <option>iPhone 6</option>
-          <option>iPhone 6+</option>
-          <option>iPhone 6s</option>
-           <option>iPhone 6s+</option>
-        </select><br>
-          <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br>
-           <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="500">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery" value="2-7 days">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
-          <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
-          <input type="text" class="form-control" placeholder=" Enter your mobile number" name="order_contact"><br>
-          <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
-          @if(!Auth::check())
-           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
-          @else
-          <p><button class="btn btn-success" type="submit">Create order</button></p>
-          @endif
-          {{Form::close()}}
+          <form name="Version">
+          <select class="form-control" name="lock" onChange="go()">
+          <option value="{{URL::to('product/9')}}">iPhone 4</option>
+          <option value="{{URL::to('product/8')}}">iPhone 4s</option>
+          <option value="{{URL::to('product/7')}}">iPhone 5</option>
+          <option value="{{URL::to('product/6')}}">iPhone 5c</option>
+          <option value="{{URL::to('product/5')}}">iPhone 5s</option>
+          <option value="{{URL::to('product/3')}}">iPhone 6</option>
+          <option value="{{URL::to('product/4')}}">iPhone 6+</option>
+          <option value="{{URL::to('product/2')}}">iPhone 6s</option>
+          <option value="{{URL::to('product/1')}}">iPhone 6s+</option> 
+          </select>
+           <script type="text/javascript">
+            function go() {
+            location= document.Version.lock.
+            options[document.Version.lock.selectedIndex].value
+            }
+          </script>
+          <br>
+          <input type="button" class="btn btn-warning" value="Go" onClick="go()">
+          </form>
           </div>
           </div>
     </div>
@@ -468,35 +451,28 @@
           </a>
           <div class="collapse" id="collapseExample2">
           <div class="well">
-          {{Form::open(array('url'=>'order', 'method'=>'POST'))}}
-          @include('common.notification')
-          <select class="form-control" name="product_name">
-          <option>iPhone 3g</option>
-          <option>iPhone 3gs</option>
-          <option>iPhone 4s</option>
-          <option>iPhone 5</option>
-          <option>iPhone 5c</option>
-          <option>iPhone 5s</option>
-          <option>iPhone 6</option>
-          <option>iPhone 6+</option>
-          <option>iPhone 6s</option>
-           <option>iPhone 6s+</option>
-        </select><br>
-          <input type="text" class="form-control" placeholder="Enter your IMEI name" name="imei"><br>
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="verizon">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
-          <input type="text" class="form-control" placeholder=" Enter your mobile number"name="order_contact"><br>
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="900">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
-          <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery">
-          <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
-          @if(!Auth::check())
-           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
-          @else
-          <p><button class="btn btn-success" type="submit">Create order</button></p>
-          @endif
-          {{Form::close()}}
+          <form name="Iphone">
+          <select class="form-control" name="mobile" onChange="go()">
+          <option value="{{URL::to('product/9')}}">iPhone 4</option>
+          <option value="{{URL::to('product/8')}}">iPhone 4s</option>
+          <option value="{{URL::to('product/7')}}">iPhone 5</option>
+          <option value="{{URL::to('product/6')}}">iPhone 5c</option>
+          <option value="{{URL::to('product/5')}}">iPhone 5s</option>
+          <option value="{{URL::to('product/3')}}">iPhone 6</option>
+          <option value="{{URL::to('product/4')}}">iPhone 6+</option>
+          <option value="{{URL::to('product/2')}}">iPhone 6s</option>
+          <option value="{{URL::to('product/1')}}">iPhone 6s+</option> 
+          </select>
+           <script type="text/javascript">
+            function go() {
+            location= document.Iphone.mobile.
+            options[document.Iphone.mobile.selectedIndex].value
+            }
+          </script>
+         <br>
+          <input type="button" class="btn btn-warning" value="Go" onClick="go()">
+          </form>
+          
       </div>
       </div>
       </div>
@@ -511,40 +487,31 @@
          <p class="">Supported devices: <p></p><span class="yellow"><b>iPhone 4/4S/5/5C/5S/6/6+/6S/6S+</b></span></p>
          <p class="">Delivery Time: <span class="yellow"><b>1-7days</b></span></p>
         <a class="btn btn-block btn-danger" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-            Easy Unlock Phone From GH₵ 50.00
+          Unlock Phone From GH₵ 50.00
           </a>
           <div class="collapse" id="collapseExample3">
           <div class="well">
-          {{Form::open(array('url'=>'order', 'method'=>'POST'))}}
-          @include('common.notification')
-          <select class="form-control" name="product_name">
-          <option>iPhone 3g</option>
-          <option>iPhone 3gs</option>
-          <option>iPhone 4</option>
-          <option>iPhone 4s</option>
-          <option>iPhone 5</option>
-          <option>iPhone 5c</option>
-          <option>iPhone 5s</option>
-          <option>iPhone 6</option>
-          <option>iPhone 6+</option>
-          <option>iPhone 6s</option>
-           <option>iPhone 6s+</option>
-          </select><br>
-          <input type="text" class="form-control" placeholder="Enter your IMEI" name="imei"><br>
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="network_name" value="Verizon">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="price" value="700">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image2" value="../public/img/photo.png">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="delivery" value="1-7 days">
-          <input type="hidden"  id="p_id" class="form-control" value="0" name="p_id">
-          <input type="hidden" class="form-control" placeholder="Enter your IMEI" name="image" value="../public/img/photo.png">
-          <input type="text" class="form-control" placeholder=" Enter your mobile number" name="order_contact"><br>
-          <input type="text" class="form-control" placeholder="Enter your email address" name="email"><br>
-          @if(!Auth::check())
-           <a class="btn btn-primary" href=""  data-toggle="modal" data-target="#siModal">Please login in first</a>
-          @else
-          <p><button class="btn btn-success" type="submit">Create order</button></p>
-          @endif
-          {{Form::close()}}
+                    <form name="Atnt">
+          <select class="form-control" name="unlocked" onChange="go()">
+          <option value="{{URL::to('product/9')}}">iPhone 4</option>
+          <option value="{{URL::to('product/8')}}">iPhone 4s</option>
+          <option value="{{URL::to('product/7')}}">iPhone 5</option>
+          <option value="{{URL::to('product/6')}}">iPhone 5c</option>
+          <option value="{{URL::to('product/5')}}">iPhone 5s</option>
+          <option value="{{URL::to('product/3')}}">iPhone 6</option>
+          <option value="{{URL::to('product/4')}}">iPhone 6+</option>
+          <option value="{{URL::to('product/2')}}">iPhone 6s</option>
+          <option value="{{URL::to('product/1')}}">iPhone 6s+</option> 
+          </select>
+           <script type="text/javascript">
+            function go() {
+            location= document.Atnt.unlocked.
+            options[document.Atnt.unlocked.selectedIndex].value
+            }
+          </script>
+          <br>
+          <input type="button" class="btn btn-warning" value="Go" onClick="go()">
+          </form>
         </div>
       </div> </div>
     </div>
@@ -655,12 +622,11 @@
   </div>
    </div>  
    <div class="col-sm-6 col-md-3 cover mf">
-    <form name="phones">
+  <form name="phones">
 
    <h4 class="blue"><b>Start unlocking here</b></h4>
    <select class="form-control" name="brands"  onChange="go()">
-   
-   <option value="{{URL::to('products/2')}}">Apple</option>
+   <option value="{{URL::to('products/1')}}">Apple</option>
    <option value="{{URL::to('products/4')}}">Blackberry</option>
    <option value="{{URL::to('products/10')}}">Huawei</option>
    <option value="{{URL::to('products/3')}}">HTC</option>
@@ -669,21 +635,12 @@
    <option value="{{URL::to('products/9')}}">Motorola</option>
    <option value="{{URL::to('products/5')}}">Nokia</option>
    <option value="{{URL::to('products/8')}}">Sony</option>
-   <option value="{{URL::to('products/1')}}">Samsung</option>
+   <option value="{{URL::to('products/2')}}">Samsung</option>
    <option value="{{URL::to('products/7')}}">ZTE</option>
    </select>
    <p></p>
 
-   <script type="text/javascript">
-    <!--
-    function go(){
-    location=
-    document.phones.brands.
-    options[document.phones.brands.selectedIndex].value
-    }
-    //-->
-    </script>
-
+   
    <p>
    <button class=" btn-block btn btn-primary"> Click to continue unlocking</button>
    </p>
@@ -994,6 +951,20 @@
      <script src="../public/js/jquery.firstVisitPopup.js"></script>  
     <script src="../public/js/jquery.breaking.js"></script>
     
+    <script type="text/javascript">
+
+    $('#network_name').change(function() {
+        selectedOption = $('option:selected', this);
+        $('input[name=delivery]').val( selectedOption.data('delivery') );
+        $('input[name=price]').val( selectedOption.data('price') );
+         $('#money').html( selectedOption.data('price'));
+         $('#days').html( selectedOption.data('delivery') );
+    });
+
+   
+    
+
+    </script> 
 
 
     <script type="text/javascript">
