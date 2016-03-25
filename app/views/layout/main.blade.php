@@ -436,10 +436,6 @@
      <footer class="">
       <div class="inline">
         <p class="blck2">Copyright &copy; 2015 Perfectunlockgh.com <a  data-toggle="modal" data-target=".bootstrapmodal" class="termsModal">Terms and conditions</a>
-        <i class="text-off"> | </i>
-        <a href=""> How to buy</a>
-        <ul class="nav">
-        <li class="pull-right">Current time 12:07:12</li>
         </ul>
         </p>
       </div>

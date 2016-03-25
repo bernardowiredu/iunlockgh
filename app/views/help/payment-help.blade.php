@@ -52,20 +52,13 @@
 </div>
 
 <div class="well well-sm mb">
-<h4 class="yellow">Information holding container</h4>
+<h4 class="blue"><b>How to make payment to unlock your phone</b></h4>
 </div>
-<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
-Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
+<p>1. Select the <b>Phone Brand</b> you want to unlock eg.<b> Apple.</b></p>
+<p>2. Select the Phone Type under the brand you selected previously eg. <b>iPhone 5.</b></p>
+<p>3. Choose the prefered unlocking service for the appropriate network your phone has been locked to.</p>
+<p>4. Continue with the order and send mobile money to any of these numbers <b>0244072639 for MTN users and 0269477119 for Airtel users.</b></p>
+<p>5. Once we receive payment a <b>Paycode eg.32565</b> will be sent to your phone in a form of a text message.</p>
+<p>6. Enter this code in the <b>Paycode form</b> on the payment page and click <b>PAY FOR ORDER to make payment.</b></p>
+<p>7. Once payment is complete a payment confirmation will be sent to your phone and unlocking process for your phone begins.</p>
 @stop

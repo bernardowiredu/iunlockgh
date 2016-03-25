@@ -27,6 +27,13 @@
 </div>
 <br>
 
+
+@if($product_count == 0)
+
+<h3 class="text-center blck2"> Sorry!! No phone has been added yet.. </h3>
+
+@else
+
 @foreach($product as $product)
  <div class="col-xs-6 col-md-3">
  <a href="#" class="thumbnail">
@@ -39,6 +46,7 @@
  </div>
 
 @endforeach
+@endif
  </div>
  <br>
 <div class="well well-sm">

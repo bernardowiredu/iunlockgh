@@ -34,7 +34,7 @@
 </div>
    
 
-    <p class="note">* For order related inquiries, please call our helpline <span> 0560094454/0244072639</span> for assistance .</p>
+    <p class="note">* For order related inquiries, please call our helpline <span> <b>0560094454/0244072639</b></span> for assistance .</p>
 
 
 

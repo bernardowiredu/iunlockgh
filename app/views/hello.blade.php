@@ -528,8 +528,7 @@
    You may need to unlock your phone in order to use a different SIM card. You've certainly come to the right place!</p>
 
     <h4 class="blue"><img src="../public/img/time_machine.png"  class="img-thumbnail hidden-xs" alt="pic" width="70" height="70" ><b> Phone Unlock Code Processed & Emailed - 24 hrs a day - 7 days a week</b></h4>
-   <p class="push">Our automated website will process your order and send your phone unlocking code via email, 
-   guarantying Faster Results and 100% Customer Services Satisfaction.</p>
+   <p class="push">Our automated website will process your order and send your phone unlocking code via email or text, guarantying Faster Results and 100% Customer Services Satisfaction.</p>
 
     <h4 class="blue"><img src="../public/img/earth.png"  class="hidden-xs img-thumbnail" alt="pic" width="65" height="65" ><b> We can Unlock 99% of the GSM Networks</b></h4>
    <p class="push">At Perfectunlockgh we can unlock most of the GSM Networks around the world. If you are trying to unlock a phone in Europe, America, Asia, Australia and over 190 Countries in the World, give us the challenge and you won't regret. We count with the largest database of unique Unlock Codes and Unlocking solutions in Earth.
@@ -537,7 +536,7 @@
 
      <h4 class="blue"><img src="../public/img/unlock.png"  class="img-thumbnail hidden-xs" alt="pic" width="70" height="70" ><b> We offer the LOWEST COST & QUICKEST TURNAROUND on every order.</b></h4>
     <p class="push">We provide your personal unlock codes and easy to follow instructions. Still wondering about how to unlock your mobile? Chillax! Our World Class Customer Support Team is available to guide you through the process via Chat, 
-    Skype or E-mail from Mon to Fri 10.00 to 20.00 hrs GMT.</p>
+    Skype or E-mail from Mon to Fri 9am to 8pm.</p>
 
      <h4 class="blue"><img src="../public/img/microphone.png"  class="img-thumbnail hidden-xs" alt="pic" width="70" height="70" ><b> Do you provide unlocking services and you need lots of codes?</b></h4>
     <p class="push">We are here to help you! We can offer you wholesale pricing and the best delivery time. We are on your side and we understand that having the best price is this business is essential, 
