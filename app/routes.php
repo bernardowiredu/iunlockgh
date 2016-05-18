@@ -98,7 +98,7 @@ Route::get('messages', array('uses'=>'MessageController@getIndex'));
 
 /*********************STORE CONTROLLER**********************************/
 Route::get('store', array('uses'=>'StoreController@getIndex'));
-Route::get('store/purchase', array('uses'=>'StoreController@getStore'));
+Route::get('purchase/{id}', array('uses'=>'StoreController@getStore'));
 
 
 /******************************VIEW SHARE*************************************/
@@ -114,12 +114,14 @@ Route::get('products/{id}', array('uses'=>'CategoryController@getproducts'));
 Route::get('blog', array('uses'=>'BlogController@getIndex'));
 Route::get('reseller', array('uses'=>'ResellerController@getIndex'));
 Route::post('contact', array('uses'=>'ContactController@postReport'));
-Route::post('gevey', array('uses'=>'GeveyController@postGevey'));
 Route::post('btc', array('uses'=>'BtcController@postBtc'));
 Route::post('comment', array('uses'=>'CommentController@postComments'));
 
 
+/************************GEVEY CONTROLLER8*****************************/
+Route::post('gevey', array('uses'=>'GeveyController@postGevey'));
 
+Route::get('gevey', array('uses'=>'GeveyController@getGeveySim'));
 
 /********************ADMIN CONTROLLER**********************************/
 
